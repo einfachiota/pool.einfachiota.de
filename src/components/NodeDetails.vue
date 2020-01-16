@@ -20,7 +20,7 @@ export default {
   methods: {
     fetchData() {
       let self = this;
-      fetch(this.url + this.nodeKey)
+      fetch(this.url +'/'+ this.nodeKey)
         .then(function(response) {
           return response.json();
         })
