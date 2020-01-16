@@ -7,14 +7,14 @@
     
     @row-click="rowClicked"
   >
-    <el-table-column class="el-table__header-row" prop="" label="Rang" align="center">
+    <el-table-column class="el-table__header-row" prop="" label="Rank" align="center">
           <template slot-scope="scope">{{ scope.$index + 1 }}</template>
     </el-table-column>
     <el-table-column prop="name" label="Name" align="center"></el-table-column>
     <el-table-column label="Version" align="center">
       <template slot-scope="scope">{{ scope.row.appName }} {{ scope.row.appVersion }}</template>
     </el-table-column>
-    <el-table-column prop="points" label="Score" align="center"></el-table-column>
+    <el-table-column prop="points" label="Points" align="center"></el-table-column>
   </el-table>
 </template>
 
