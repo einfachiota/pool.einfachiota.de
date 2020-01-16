@@ -3,8 +3,8 @@
     <div class="row footer-bottom">
       <div class="footer-bottom-col">© TangeBay.org & <a target="_blank" class="footer-main-link" href="https://www.einfachIOTA.de">einfachIOTA.de</a></div>
       <div class="footer-bottom-col">
-        <router-link to="imprint" class="footer-main-link">Impressum</router-link>
-        <router-link to="privacy" class="footer-main-link">Datenschutz</router-link>
+        <router-link to="imprint" class="footer-main-link"><i18n path="imprint"></i18n></router-link>
+        <router-link to="privacy" class="footer-main-link"><i18n path="privacy"></i18n></router-link>
       </div>
     </div>
   </div>

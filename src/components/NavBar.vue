@@ -12,6 +12,24 @@ NavBar<template>
       </div>
     </div>
 
+    <div v-on:click="switchLanguage()" class="lang">
+        <!-- <span>Switch Language </span> -->
+        <img v-if="this.$i18n.locale != 'de'"
+          alt="lang" 
+          class="logo" 
+          src="../plugins/ger-flag.png" 
+          contain   
+          height="20rm"
+        >
+        <img v-else
+          alt="lang" 
+          class="logo" 
+          src="../plugins/us-flag.png" 
+          contain   
+          height="20rm"
+        >
+    </div>
+
     <div v-bind:class="{ open: navStateOpen }" class="nav-menu">
       <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
         <span >Home</span>
@@ -30,8 +48,22 @@ export default {
   methods: {
     toggleNav() {
       this.navStateOpen = !this.navStateOpen;
+    },
+    switchLanguage(){
+      if(this.$i18n.locale == 'de'){
+        this.$i18n.locale = 'en'
+      } else {
+        this.$i18n.locale = 'de'
+      }
     }
-  }
+  },
+      mounted() {
+        console.log("mounted");
+      let userLang = navigator.language || navigator.userLanguage; 
+      if(userLang.slice(0,2) == 'de'){
+        this.$i18n.locale = 'de'
+      }
+    }
 };
 </script>
 
@@ -53,6 +85,9 @@ export default {
   background-color: var(--dark);
   border-bottom: 5px solid var(--primary);
   transition: all 200ms ease-in-out;
+    .lang {
+      margin-right: -25%;
+    }
   .menu-btn {
     display: none;
   }
@@ -137,6 +172,9 @@ export default {
 
 @media only screen and (max-width: 992px) {
   .main-nav {
+    .lang {
+      margin-right: 2%;
+    }
     &.open {
       background-color: var(--white);
       &.normal {

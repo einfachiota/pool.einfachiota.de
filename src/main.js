@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import {i18n} from './plugins/i18n'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -14,6 +15,7 @@ Vue.use(ElementUI);
 Vue.use(VueClipboard)
 
 new Vue({
+  i18n,
   router,
   render: h => h(App)
 }).$mount('#app')
