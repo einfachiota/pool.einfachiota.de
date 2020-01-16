@@ -135,6 +135,9 @@ button.el-button.el-button--light {
 .el-main {
    min-height: calc(100vh - 160px);
 }
+.nav-item {
+  color:var(--primary)
+}
 @media only screen and (max-width: 1260px) {
   .container {
     margin: 0 auto;
