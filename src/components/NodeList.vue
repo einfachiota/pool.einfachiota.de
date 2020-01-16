@@ -14,9 +14,6 @@
     <el-table-column label="Version" align="center">
       <template slot-scope="scope">{{ scope.row.appName }} {{ scope.row.appVersion }}</template>
     </el-table-column>
-     <el-table-column prop="available" label="Status" align="center">
-      <template slot-scope="scope"><el-tag :type="`${scope.row.available ? 'success' : 'danger'}`">{{scope.row.available ? "online" : "offline"}}</el-tag></template>
-    </el-table-column>
     <el-table-column prop="points" label="Score" align="center"></el-table-column>
   </el-table>
 </template>
@@ -56,7 +53,7 @@ export default {
     },
     rowClicked(row) {
       console.log("row", row)
-      this.$router.push({ name: 'details', params: { nodeName: row.name, details: row } })
+      this.$router.push({ name: 'details', params: { nodeKey: row.key, details: row } })
         console.log("row2")
 
     }
