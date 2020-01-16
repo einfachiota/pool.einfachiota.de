@@ -91,12 +91,14 @@ export default {
   background-color: rgb(225, 231, 239);
 }
 
-.el-table .danger-row {
-  background: #ffb3b3;
+.el-tag.el-tag--danger {
+  background: #d05656;
+  color: rgb(225, 231, 239);
 }
 
-.el-table .success-row {
-  background: #b3ffb3;
+.el-tag.el-tag--success {
+  background: #3cc13c;
+  color: rgb(225, 231, 239);
 }
 </style>
 
