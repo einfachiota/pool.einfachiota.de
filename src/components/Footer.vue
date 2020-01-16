@@ -1,10 +1,10 @@
 <template>
   <div class="footer">
     <div class="row footer-bottom">
-      <div class="footer-bottom-col">© TangeBay.org & <a target="_blank" class="footer-main-link" href="https://www.einfachIOTA.de">einfachIOTA.de</a></div>
+      <div class="footer-bottom-col">Made with &#10084; by <a target="_blank" class="footer-main-link" href="https://www.einfachIOTA.de">einfachIOTA/a> & <a target="_blank" class="footer-main-link" href="https://tanglebay.org">Tangle Bay</a></div>
       <div class="footer-bottom-col">
-        <router-link to="imprint" class="footer-main-link">Impressum</router-link>
-        <router-link to="privacy" class="footer-main-link">Datenschutz</router-link>
+        <a class="footer-main-link" href="https://tanglebay.org/legal-notice/">Legal Notice</a>
+        <a class="footer-main-link" href="https://tanglebay.org/datenschutzerklaerung/">Privacy Policy</a>
       </div>
     </div>
   </div>
