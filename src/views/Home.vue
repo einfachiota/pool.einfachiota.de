@@ -4,7 +4,7 @@
       <h1 class="heading">Tangle Bay Dock</h1>
       <p class="sub-heading">The dock for the community</p>
     </div>
-    
+
     <div class="section section-background">
       <div class="container">
         <h2>Dock in!</h2>
@@ -17,7 +17,7 @@
           class="el-zoom-in-top"
         ></el-alert>
         <h3 v-clipboard:copy="url" v-clipboard:success="onCopy" v-clipboard:error="onError">{{url}}</h3>
-        <br>
+        <br />
         <button
           type="button"
           class="el-button el-button--primary"
@@ -28,10 +28,20 @@
       </div>
     </div>
 
-<div class="section">
+    <div class="section">
       <div class="container">
-    <h2>Node Liste</h2>
-    <NodeList/>
+        <h2>Node Liste</h2>
+        <NodeList />
+      </div>
+    </div>
+    <div class="section section-background">
+      <div class="container">
+        <h2>Join the Dock!</h2>
+        <p>Register your IOTA node and be part of the Community Dock. We support IRI and Hornet nodes.</p>
+        <router-link to="/" class="nav-item" exact-active-class="active">
+          Register your node
+        </router-link>
+        <br>
       </div>
     </div>
   </div>
@@ -82,7 +92,7 @@ export default {
   padding: 80px 0;
   &-background {
     color: var(--white);
-  background-color: var(--dark);
+    background-color: var(--dark);
     p {
       max-width: 600px;
       margin: 15px auto 30px;
