@@ -2,35 +2,10 @@
   <div class="home">
     <div class="hero">
       <h1 class="heading">Tangle Bay Dock</h1>
-      <p class="sub-heading">The dock for the community</p>
+      <p class="sub-heading">The node dock for the community</p>
     </div>
-
-    <div class="section section-background">
-      <div class="container">
-        <h2>Dock in!</h2>
-        <p>You can specify the dock in your Trinity Wallet as IOTA Node and get access to all nodes in the dock!</p>
-        <el-alert
-          title="URL erfolgreich kopiert!"
-          type="success"
-          center
-          v-if="copied"
-          class="el-zoom-in-top"
-        ></el-alert>
-        <h3 v-clipboard:copy="url" v-clipboard:success="onCopy" v-clipboard:error="onError">{{url}}</h3>
-        <br />
-        <button
-          type="button"
-          class="el-button el-button--primary"
-          v-clipboard:copy="url"
-          v-clipboard:success="onCopy"
-          v-clipboard:error="onError"
-        >URL Kopieren</button>
-      </div>
-    </div>
-
     <div class="section">
       <div class="container">
-        <h2>Node Liste</h2>
         <NodeList />
       </div>
     </div>

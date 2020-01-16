@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <h3>Node Details</h3>
-    <NodeDetails :nodeName="$route.params.nodeName"/>
+    <NodeDetails :nodeKey="$route.params.nodeKey"/>
   </div>
 </template>
 
