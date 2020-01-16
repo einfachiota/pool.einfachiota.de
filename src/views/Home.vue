@@ -38,7 +38,7 @@
       <div class="container">
         <h2>Join the Dock!</h2>
         <p>Register your IOTA node and be part of the Community Dock. We support IRI and Hornet nodes.</p>
-        <router-link to="/" class="nav-item" exact-active-class="active">
+        <router-link to="/manage" class="nav-item" exact-active-class="active">
           Register your node
         </router-link>
         <br>

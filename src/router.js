@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Manage from './views/Manage.vue'
 import Details from './views/Details.vue'
 import Imprint from './views/Imprint.vue'
 import Privacy from './views/Privacy.vue'
@@ -19,6 +20,11 @@ export default new Router({
       name: 'details',
       component: Details,
       props: true,
+    },
+    {
+      path: '/manage',
+      name: 'manage',
+      component: Manage
     },
     {
       path: '/about',
