@@ -12,17 +12,17 @@ export const i18n = new VueI18n({
       register2: 'Register your node',
       join: 'Join the Dock!',
       nodedock: 'The node dock for the community',
-      score: 'Score',
+      points: 'Points',
       rank: 'Rank',
-      imprint: 'Imprint',
-      privacy: 'Privacy policy'
+      imprint: 'Legal Notice',
+      privacy: 'Privacy Policy'
     },
     de: {
       register: 'Registrieren Sie Ihren IOTA-Node und werden Sie Teil des Community Docks. Wir unterstützen IRI- und Hornet-Nodes.',
       register2: 'Registriere deinen Node',
       join: 'Join the Dock!',
       nodedock: 'Der Nodehafen für die Community',
-      score: 'Punktzahl',
+      points: 'Punkte',
       rank: 'Rang',
       imprint: 'Impressum',
       privacy: 'Datenschutz'
