@@ -23,8 +23,8 @@ export default new Router({
       props: true,
     },
     {
-      path: '/manage',
-      name: 'manage',
+      path: '/register',
+      name: 'register',
       component: Manage
     },
     {
