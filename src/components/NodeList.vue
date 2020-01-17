@@ -12,7 +12,7 @@
     </el-table-column>
     <el-table-column prop="name" label="Name" align="center"></el-table-column>
     <el-table-column label="Version" align="center">
-      <template slot-scope="scope">{{ scope.row.appName }} {{ scope.row.appVersion }}</template>
+      <template slot-scope="scope">{{ scope.row.appVersion ? `${scope.row.appName} ${scope.row.appVersion}` : "-" }}</template>
     </el-table-column>
     <el-table-column prop="points" :label="$t('points')" align="center"></el-table-column>
   </el-table>
