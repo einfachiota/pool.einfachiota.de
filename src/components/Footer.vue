@@ -99,6 +99,14 @@
         color: var(--primary);
       }
     }
+    .footer-main-link-2 {
+     color: var(--primary);
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+      &:hover {
+        color: var(--primary);
+      }
+    }
   }
 }
 @media only screen and (max-width: 992px) {
