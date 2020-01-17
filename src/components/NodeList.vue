@@ -8,7 +8,7 @@
     @row-click="rowClicked"
   >
     <el-table-column class="el-table__header-row" prop="" :label="$t('rank')" align="center">
-          <template slot-scope="scope">{{ scope.$index + 1 }}</template>
+          <template slot-scope="scope">#{{ scope.$index + 1 }}</template>
     </el-table-column>
     <el-table-column prop="name" label="Name" align="center"></el-table-column>
     <el-table-column label="Version" align="center">
