@@ -10,6 +10,7 @@ export const i18n = new VueI18n({
     en:{
       register: 'Register your IOTA node and be part of the Community Dock. We support IRI and Hornet nodes.',
       register2: 'Register your node',
+      nav_register: 'Register',
       join: 'Join the Dock!',
       nodedock: 'The node dock for the community',
       points: 'Points',
@@ -20,6 +21,7 @@ export const i18n = new VueI18n({
     de: {
       register: 'Registrieren Sie Ihren IOTA-Node und werden Sie Teil des Community Docks. Wir unterstützen IRI- und Hornet-Nodes.',
       register2: 'Registriere deinen Node',
+      nav_register: 'Registrieren',
       join: 'Join the Dock!',
       nodedock: 'Der Nodehafen für die Community',
       points: 'Punkte',

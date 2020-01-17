@@ -34,6 +34,9 @@ NavBar<template>
       <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
         <span >Home</span>
       </router-link>
+      <router-link v-on:click.native="navStateOpen = false" to="/manage" class="nav-item" active-class="active">
+      <span ><i18n path="nav_register"></i18n></span>
+      </router-link>
     </div>
   </nav>
 </template>
@@ -104,7 +107,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--dark);
+    color: var(--white);
     font-family: "Roboto Slab";
     font-weight: bold;
     text-decoration: none;
