@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       loading: false,
-      url: "https://score.tanglebay.org/nodes",
+      url: "https://score.tanglebay.org/nodes/",
       details: {},
       intervalid1: null
     };
