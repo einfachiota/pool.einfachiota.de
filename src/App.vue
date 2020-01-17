@@ -133,7 +133,7 @@ button.el-button.el-button--light {
   width: 1200px;
 }
 .el-main {
-   min-height: calc(100vh - 160px);
+   min-height: calc(100vh - 130px);
 }
 .nav-item {
   color:var(--primary)
