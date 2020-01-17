@@ -1,8 +1,11 @@
 <template>
   <div class="footer">
     <div class="row footer-bottom">
-      <div class="footer-bottom-col">Made with &#10084; by <a target="_blank" class="footer-main-link" href="https://www.einfachIOTA.de">einfachIOTA</a> & <a target="_blank" class="footer-main-link" href="https://tanglebay.org">Tangle Bay</a></div>
-      <div class="footer-bottom-col">
+       <div class="footer-bottom-col footer-bottom-col__left">
+        <a target ="_blank" class="footer-main-link" href="https://status.tanglebay.org">Status</a>
+      </div>
+      <div class="footer-bottom-col">Made with <span class="heart">&#10084;</span> by <a target="_blank" class="footer-main-link footer-main-link__inline" href="https://www.einfachIOTA.de">einfachIOTA</a>&<a target="_blank" class="footer-main-link footer-main-link__inline" href="https://tanglebay.org">Tangle Bay</a></div>
+      <div class="footer-bottom-col footer-bottom-col__right">
         <a class="footer-main-link" href="https://tanglebay.org/legal-notice/"><i18n path="imprint"></i18n></a>
         <a class="footer-main-link" href="https://tanglebay.org/privacy-policy/"><i18n path="privacy"></i18n></a>
       </div>
@@ -48,7 +51,7 @@
     }
     .footer-main-link {
       display: block;
-      color: var(--dark);
+      color: var(--primary);
       margin: 0;
       line-height: 2;
       font-size: 16px;
@@ -57,15 +60,7 @@
       &:hover {
         color: var(--primary);
       }
-    }
-    .footer-main-link-2 {
-      color: var(--dark);
-      margin: 0;
-      line-height: 2;
-      font-size: 16px;
-      text-decoration: none;
-      transition: color 200ms ease-in-out;
-      &:hover {
+      &:visited {
         color: var(--primary);
       }
     }
@@ -85,6 +80,7 @@
       .footer-main-link {
         margin: 0 10px;
         color: var(--primary);
+        text-decoration: none;
         &:visited {
           color: var(--primary);
 
@@ -95,22 +91,10 @@
         &:last-child {
           margin-right: 0;
         }
-      }
-    }
-    .footer-main-link {
-     color: var(--primary);
-      text-decoration: none;
-      transition: color 200ms ease-in-out;
-      &:hover {
-        color: var(--primary);
-      }
-    }
-    .footer-main-link-2 {
-     color: var(--primary);
-      text-decoration: none;
-      transition: color 200ms ease-in-out;
-      &:hover {
-        color: var(--primary);
+        &__inline {
+          margin: 0 3px;
+          text-decoration: underline;
+        }
       }
     }
   }
