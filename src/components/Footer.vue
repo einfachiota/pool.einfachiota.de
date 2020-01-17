@@ -1,11 +1,11 @@
 <template>
   <div class="footer">
     <div class="row footer-bottom">
-      <div class="footer-bottom-col">
+      <div class="footer-bottom-col footer-bottom-col__left">
         <a target ="_blank" class="footer-main-link" href="https://status.tanglebay.org">Status</a>
       </div>
-      <div class="footer-bottom-col">Made with &#10084; by <a target="_blank" class="footer-main-link-2" href="https://www.einfachIOTA.de">einfachIOTA</a> & <a target="_blank" class="footer-main-link-2" href="https://tanglebay.org">Tangle Bay</a></div>
-      <div class="footer-bottom-col">
+      <div class="footer-bottom-col">Made with <span class="heart">&#10084;</span> by <a target="_blank" class="footer-main-link-2" href="https://www.einfachIOTA.de">einfachIOTA</a> & <a target="_blank" class="footer-main-link-2" href="https://tanglebay.org">Tangle Bay</a></div>
+      <div class="footer-bottom-col footer-bottom-col__right">
         <a class="footer-main-link" href="https://tanglebay.org/legal-notice/">Legal Notice</a>
         <a class="footer-main-link" href="https://tanglebay.org/privacy-policy/">Privacy Policy</a>
       </div>
@@ -17,11 +17,14 @@
 .footer {
   background-color: var(--dark);
   width: 100%;
-  padding: 50px 50px 0;
+  padding: 15px 50px 0;
   box-sizing: border-box;
   text-align: center;
   border-top: 5px solid var(--primary);
   color: var(--primary);
+  .heart {
+    color: red;
+  }
   .row {
     display: flex;
     justify-content: space-between;
@@ -71,11 +74,17 @@
     }
   }
   .footer-bottom {
-    padding: 15px 50px;
+    padding: 15px 20px;
     margin: 0 -50px;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.25);
     color: var(--primary);
     .footer-bottom-col {
+      width: 33%;
+      &__left {
+        text-align: left;
+      }
+      &__right {
+        text-align: right;
+      }
       .footer-main-link {
         margin: 0 10px;
         color: var(--primary);
