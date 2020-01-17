@@ -78,6 +78,7 @@ export default {
 
 .particles {
   display: block;
+  max-height: 10vh;
 }
 .el-main {
   padding: 0px !important;
@@ -87,8 +88,6 @@ export default {
 }
 .hero {
   margin: 0 10px;
-  margin-top: -700px;
-
 }
 .section {
   padding: 80px 0;
@@ -110,6 +109,10 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.el-table th.is-leaf {
+  border-bottom: 1px solid var(--primary);
 }
 @media only screen and (max-width: 740px) {
   .hero {
