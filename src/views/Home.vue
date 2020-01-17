@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="heading">Tangle Dock</h1>
-      <p class="sub-heading">Be a part of the bay.</p>
+      <h1 class="heading">Tangle Bay Dock</h1>
+      <p class="sub-heading"><i18n path="nodedock"></i18n></p>
     </div>
     <div class="section">
       <div class="container">
@@ -11,10 +11,10 @@
     </div>
     <div class="section section-background">
       <div class="container">
-        <h2>Join the Dock!</h2>
-        <p>Register your IOTA node and be part of the Community Dock. We support IRI and Hornet nodes.</p>
+        <h2><i18n path="join"></i18n></h2>
+        <p><i18n path="register"></i18n></p>
         <router-link to="/manage" class="nav-item" exact-active-class="active">
-          Register your node
+          <i18n path="register2"></i18n>
         </router-link>
         <br>
       </div>
