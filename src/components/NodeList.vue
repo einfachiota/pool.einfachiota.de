@@ -11,7 +11,7 @@
           <template slot-scope="scope">{{ scope.$index + 1 }}</template>
     </el-table-column>
     <el-table-column prop="name" label="Name" align="center"></el-table-column>
-    <el-table-column label="Version" align="center">
+    <el-table-column label="ID" align="center">
       <template slot-scope="scope">{{ scope.row.nodeKey }}</template>
     </el-table-column>
     <el-table-column prop="points" label="Points" align="center"></el-table-column>
