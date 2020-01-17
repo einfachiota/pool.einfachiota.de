@@ -1,6 +1,6 @@
 <template>
   <div class="node">
-    <h2>Node Details</h2>
+    <h2 class="headline">Node Details</h2>
     <el-card class="node-box">
       <div slot="header" class="clearfix">
         <div class="left">
@@ -93,9 +93,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.headline {
+  text-align: center;
+}
 .node-box {
-  margin: 30px 0;
+  margin: 30px auto;
   background-color: var(--light);
+  max-width: 1024px;
 }
 .el-tag.el-tag--danger {
   background: #d05656;
