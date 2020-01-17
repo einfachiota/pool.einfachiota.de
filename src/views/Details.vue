@@ -1,6 +1,5 @@
 <template>
-  <div class="detail">
-    <h3>Node Details</h3>
+  <div class="details">
     <NodeDetails :nodeKey="$route.params.nodeKey"/>
   </div>
 </template>
@@ -25,7 +24,8 @@ a {
   color: var(--primary);
 }
 
-.detail {
+.details {
   margin-top: 50px;
+  padding: 20px 50px;
 }
 </style>
