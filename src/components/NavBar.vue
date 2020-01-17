@@ -77,7 +77,7 @@ export default {
   top: 0;
   left: 0;
   z-index: 10;
-  height: 100px;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -118,7 +118,7 @@ export default {
       opacity: 1;
       img.logo {
         width: auto;
-        height: 65px;
+        height: 45px;
         transition: all 200ms ease-in-out;
       }
     }
