@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="heading">Tangle Bay Dock</h1>
-      <p class="sub-heading">The node dock for the community</p>
+      <h1 class="heading">Tangle Dock</h1>
+      <p class="sub-heading">be a part of the bay</p>
     </div>
     <div class="section">
       <div class="container">
