@@ -13,6 +13,10 @@
             <strong>Version:</strong>
             {{details.appName}} {{details.appVersion}}
           </p>
+          <p>
+            <strong>Donationaddress:</strong>
+            {{details.address}}
+          </p>
         </div>
         <div class="right">
          <el-tag
