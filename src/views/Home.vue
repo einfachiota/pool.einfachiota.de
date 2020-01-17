@@ -2,7 +2,7 @@
   <div class="home">
     <div class="hero">
       <h1 class="heading">Tangle Dock</h1>
-      <p class="sub-heading">be a part of the bay</p>
+      <p class="sub-heading">Be a part of the bay.</p>
     </div>
     <div class="section">
       <div class="container">
