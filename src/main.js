@@ -8,6 +8,8 @@ import router from './router'
 
 import VueClipboard from 'vue-clipboard2'
 
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 
 Vue.config.productionTip = false
 

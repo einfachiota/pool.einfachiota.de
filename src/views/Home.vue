@@ -1,8 +1,29 @@
 <template>
   <div class="home">
+     <vue-particles
+        class="particles"
+        color="#dedede"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#000000"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
     <div class="hero">
+     
       <h1 class="heading">Tangle Bay Dock</h1>
       <p class="sub-heading"><i18n path="nodedock"></i18n></p>
+     
     </div>
     <div class="section">
       <div class="container">
@@ -54,6 +75,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.particles {
+  display: block;
+}
 .el-main {
   padding: 0px !important;
 }
@@ -62,6 +87,8 @@ export default {
 }
 .hero {
   margin: 0 10px;
+  margin-top: -700px;
+
 }
 .section {
   padding: 80px 0;
