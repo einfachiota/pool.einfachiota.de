@@ -3,7 +3,7 @@
     <div class="row footer-bottom">
       <div class="footer-bottom-col">
         <a target ="_blank" class="footer-main-link" href="https://status.tanglebay.org">Status</a>
-      <div class="footer-bottom-col">Made with &#10084; by <a target="_blank" href="https://www.einfachIOTA.de">einfachIOTA</a> & <a target="_blank" href="https://tanglebay.org">Tangle Bay</a></div>
+      <div class="footer-bottom-col">Made with &#10084; by <a target="_blank" class="footer-main-link-2" href="https://www.einfachIOTA.de">einfachIOTA</a> & <a target="_blank" class="footer-main-link-2" href="https://tanglebay.org">Tangle Bay</a></div>
       <div class="footer-bottom-col">
         <a class="footer-main-link" href="https://tanglebay.org/legal-notice/">Legal Notice</a>
         <a class="footer-main-link" href="https://tanglebay.org/privacy-policy/">Privacy Policy</a>
@@ -46,6 +46,18 @@
       margin: 15px 0;
     }
     .footer-main-link {
+      display: block;
+      color: var(--dark);
+      margin: 0;
+      line-height: 2;
+      font-size: 16px;
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    .footer-main-link-2 {
       display: block;
       color: var(--dark);
       margin: 0;
