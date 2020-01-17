@@ -59,7 +59,6 @@
       }
     }
     .footer-main-link-2 {
-      display: block;
       color: var(--dark);
       margin: 0;
       line-height: 2;
