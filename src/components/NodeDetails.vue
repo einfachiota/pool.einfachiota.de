@@ -10,6 +10,14 @@
             {{details.key}}
           </p>
           <p>
+            <strong>Latest Milestone:</strong>
+            {{details.milestone}}
+          </p>
+          <p>
+            <strong>Solid Milestone:</strong>
+            {{details.solidMilestone}}
+          </p>
+          <p>
             <strong>Version:</strong>
             {{details.appName}} {{details.appVersion}}
           </p>
