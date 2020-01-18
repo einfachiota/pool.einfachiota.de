@@ -1,7 +1,7 @@
 NavBar<template>
   <nav v-bind:class="{ open: navStateOpen }" class="main-nav">
     <router-link to="/" class="nav-item nav-item--logo" exact-active-class="active">
-      <img alt="einfachIOTA" class="logo" src="../assets/logo.png">
+      <img alt="Tangle Bay" class="logo" src="../assets/logo.png">
     </router-link>
 
     <div v-bind:class="{ open: navStateOpen }" class="menu-btn-container" @click="toggleNav">
@@ -10,6 +10,15 @@ NavBar<template>
         <span class="center"></span>
         <span class="bottom"></span>
       </div>
+    </div>
+
+    <div v-bind:class="{ open: navStateOpen }" class="nav-menu">
+      <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
+        <span >Home</span>
+      </router-link>
+      <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
+      <span ><i18n path="nav_register"></i18n></span>
+      </router-link>
     </div>
 
     <div v-on:click="switchLanguage()" class="lang">
@@ -28,15 +37,6 @@ NavBar<template>
           contain   
           height="20rm"
         >
-    </div>
-
-    <div v-bind:class="{ open: navStateOpen }" class="nav-menu">
-      <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
-        <span >Home</span>
-      </router-link>
-      <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
-      <span ><i18n path="nav_register"></i18n></span>
-      </router-link>
     </div>
   </nav>
 </template>
