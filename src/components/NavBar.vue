@@ -89,7 +89,7 @@ export default {
   border-bottom: 5px solid var(--primary);
   transition: all 200ms ease-in-out;
     .lang {
-      margin-right: -25%;
+      margin-right: 2%;
     }
   .menu-btn {
     display: none;
