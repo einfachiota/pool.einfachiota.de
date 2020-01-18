@@ -34,7 +34,7 @@ NavBar<template>
       <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
         <span >Home</span>
       </router-link>
-      <router-link v-on:click.native="navStateOpen = false" to="/manage" class="nav-item" active-class="active">
+      <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
       <span ><i18n path="nav_register"></i18n></span>
       </router-link>
     </div>
