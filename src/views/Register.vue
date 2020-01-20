@@ -18,22 +18,9 @@
     <div class="section">
       <div class="container howto">
         <h2>HowTo</h2>
-        <p>
-          <i18n path="node_register.howto1"></i18n>
-        </p>
-        <pre><i18n path="node_register.code1"></i18n></pre>
-        <p>
-          <i18n path="node_register.howto2"></i18n>
-        </p>
-        <ul class="change-list">
-          <li>mynode</li>
-          <li>http://1.2.3.4:14265</li>
-          <li>CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW</li>
-          <li>true/false</li>
-        </ul>
-        <p>
-          <i18n path="node_register.attention"></i18n>
-        </p>
+ 
+        <AddNodeForm />
+      
       </div>
     </div>
     <div class="section section-background">
@@ -47,7 +34,6 @@
 
         <h3>HowTo</h3>
 
-        <pre><i18n path="node_delete.code"></i18n></pre>
       </div>
     </div>
     <br>
@@ -63,16 +49,18 @@
         </p>
         <h3>HowTo</h3>
 
-        <pre><i18n path="node_update.code"></i18n></pre>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
+import AddNodeForm from '../components/AddNodeForm'
+
 export default {
   name: "Register",
-  components: {},
+  components: { AddNodeForm },
   data() {
     return {
       data: null
@@ -94,4 +82,5 @@ export default {
     margin: 10px 0;
   }
 }
+
 </style>
