@@ -35,11 +35,13 @@
       <table class="el-table">
         <thead class="el-table__head">
           <td>Command</td>
-          <td>Value</td>
+          <td>Count</td>
+          <td>Points</td>
         </thead>
         <tbody>
           <tr class="el-table__row" v-for="(command, index) in sortedCommands" :key="index">
             <td>{{command.name}}</td>
+            <td>{{command.count}}</td>
             <td>{{command.points}}</td>
           </tr>
         </tbody>
