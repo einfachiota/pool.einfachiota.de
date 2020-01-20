@@ -34,7 +34,7 @@
       <div class="container">
         <h2><i18n path="join"></i18n></h2>
         <p><i18n path="register"></i18n></p>
-        <router-link to="/manage" class="nav-item" exact-active-class="active">
+        <router-link to="/register" class="nav-item" exact-active-class="active">
           <i18n path="register2"></i18n>
         </router-link>
         <br>

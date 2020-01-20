@@ -94,7 +94,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.command = `curl https://register.tanglebay.org/nodes -X POST -H 'Content-type: application/json' -d '{"name": "${ this.ruleForm.name }", "url": "${ this.ruleForm.url }", "address": "${ this.ruleForm.address }", "pow": ${ this.ruleForm.pow }, "password": "${ this.ruleForm.password }" }' |jq`
+          this.command = `curl --silent --output /dev/null -X DELETE https://register.tanglebay.org/nodes/${ this.ruleForm.password } && curl https://register.tanglebay.org/nodes -X POST -H 'Content-type: application/json' -d '{"name": "${ this.ruleForm.name }", "url": "${ this.ruleForm.url }", "address": "${ this.ruleForm.address }", "pow": ${ this.ruleForm.pow }, "password": "${ this.ruleForm.password }" }' |jq`
           this.showCode = true;
         } else {
           console.log("error submit!!");
