@@ -17,7 +17,7 @@
     </div>
     <div class="section">
       <div class="container howto">
-        <h2>HowTo</h2>
+        <h2>HowToRegister</h2>
  
         <AddNodeForm />
       
@@ -28,12 +28,8 @@
         <h2>
           <i18n path="node_delete.title"></i18n>
         </h2>
-        <p class="text">
-          <i18n path="node_delete.description"></i18n>
-        </p>
-
-        <h3>HowTo</h3>
-
+         <h3>HowToDelete</h3>
+         <RemoveNodeForm />
       </div>
     </div>
     <br>
@@ -57,10 +53,11 @@
 <script>
 
 import AddNodeForm from '../components/AddNodeForm'
+import RemoveNodeForm from '../components/RemoveNodeForm'
 
 export default {
   name: "Register",
-  components: { AddNodeForm },
+  components: { AddNodeForm, RemoveNodeForm },
   data() {
     return {
       data: null
