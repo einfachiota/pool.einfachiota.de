@@ -35,16 +35,13 @@
     <br>
     <br>
     <br>
-    <div class="section section-background">
+    <div class="section">
       <div class="container howto">
         <h2>
           <i18n path="node_update.title"></i18n>
         </h2>
-        <p class="text">
-          <i18n path="node_update.description"></i18n>
-        </p>
-        <h3>HowTo</h3>
-
+        <h3>HowToUpdate</h3>
+        <UpdateNodeForm />
       </div>
     </div>
   </div>
@@ -54,10 +51,11 @@
 
 import AddNodeForm from '../components/AddNodeForm'
 import RemoveNodeForm from '../components/RemoveNodeForm'
+import UpdateNodeForm from '../components/UpdateNodeForm'
 
 export default {
   name: "Register",
-  components: { AddNodeForm, RemoveNodeForm },
+  components: { AddNodeForm, RemoveNodeForm, UpdateNodeForm },
   data() {
     return {
       data: null
