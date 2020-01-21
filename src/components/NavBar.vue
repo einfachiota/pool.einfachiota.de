@@ -177,7 +177,7 @@ export default {
 @media only screen and (max-width: 992px) {
   .main-nav {
     .lang {
-      margin-right: 2%;
+      margin: 20px auto;
     }
     &.open {
       background-color: var(--white);
@@ -204,7 +204,7 @@ export default {
           position: absolute;
           height: 3px;
           width: 100%;
-          background-color: var(--dark);
+          background-color: var(--light);
           border-radius: var(--border-radius-sm);
           transition: all 300ms ease-in-out;
         }
