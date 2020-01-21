@@ -19,24 +19,24 @@ NavBar<template>
       <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
       <span ><i18n path="nav_register"></i18n></span>
       </router-link>
-    </div>
 
-    <div v-on:click="switchLanguage()" class="lang">
-        <!-- <span>Switch Language </span> -->
-        <img v-if="this.$i18n.locale != 'de'"
-          alt="lang" 
-          class="logo" 
-          src="../plugins/ger-flag.png" 
-          contain   
-          height="20rm"
-        >
-        <img v-else
-          alt="lang" 
-          class="logo" 
-          src="../plugins/us-flag.png" 
-          contain   
-          height="20rm"
-        >
+      <div v-on:click="switchLanguage()" class="lang">
+          <!-- <span>Switch Language </span> -->
+          <img v-if="this.$i18n.locale != 'de'"
+            alt="lang" 
+            class="logo" 
+            src="../plugins/ger-flag.png" 
+            contain   
+            height="20rm"
+          >
+          <img v-else
+            alt="lang" 
+            class="logo" 
+            src="../plugins/us-flag.png" 
+            contain   
+            height="20rm"
+          >
+      </div>
     </div>
   </nav>
 </template>
@@ -61,7 +61,7 @@ export default {
     }
   },
       mounted() {
-        console.log("mounted");
+      console.log("mounted");
       let userLang = navigator.language || navigator.userLanguage; 
       if(userLang.slice(0,2) == 'de'){
         this.$i18n.locale = 'de'
@@ -88,9 +88,9 @@ export default {
   background-color: var(--dark);
   border-bottom: 5px solid var(--primary);
   transition: all 200ms ease-in-out;
-    .lang {
-      margin-right: 2%;
-    }
+  .lang {
+    margin-right: 40px;
+  }
   .menu-btn {
     display: none;
   }
