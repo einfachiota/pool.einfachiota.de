@@ -90,6 +90,7 @@ export default {
   transition: all 200ms ease-in-out;
   .lang {
     margin-right: 40px;
+    margin-left: 20px;
   }
   .menu-btn {
     display: none;
@@ -103,7 +104,7 @@ export default {
     position: relative;
     overflow: hidden;
     height: 100%;
-    padding: 0 50px;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
