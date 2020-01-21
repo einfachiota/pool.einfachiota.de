@@ -1,15 +1,9 @@
 <template>
   <div class="home">
-    <div class="hero">
-      <h1 class="heading">Be part of the Community Dock</h1>
-      <p class="sub-heading">Register your IOTA Node</p>
-    </div>
-
     <div class="section section-background">
       <div class="container howto">
-        <h2>
-          <i18n path="node_register.title"></i18n>
-        </h2>
+        <h1 class="heading">Be part of the Community Dock</h1>
+        <p class="sub-heading">Register your IOTA Node</p>
         <p class="text">
           <i18n path="node_register.description"></i18n>
         </p>
@@ -17,10 +11,12 @@
     </div>
     <div class="section">
       <div class="container howto">
-        <h2>HowToRegister</h2>
- 
+        <h2>
+          <i18n path="node_register.title"></i18n>
+        </h2>
+        <h3>HowToRegister</h3>
+
         <AddNodeForm />
-      
       </div>
     </div>
     <div class="section section-background">
@@ -28,13 +24,13 @@
         <h2>
           <i18n path="node_delete.title"></i18n>
         </h2>
-         <h3>HowToDelete</h3>
-         <RemoveNodeForm />
+        <h3>HowToDelete</h3>
+        <RemoveNodeForm />
       </div>
     </div>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
     <div class="section">
       <div class="container howto">
         <h2>
@@ -48,10 +44,9 @@
 </template>
 
 <script>
-
-import AddNodeForm from '../components/AddNodeForm'
-import RemoveNodeForm from '../components/RemoveNodeForm'
-import UpdateNodeForm from '../components/UpdateNodeForm'
+import AddNodeForm from "../components/AddNodeForm";
+import RemoveNodeForm from "../components/RemoveNodeForm";
+import UpdateNodeForm from "../components/UpdateNodeForm";
 
 export default {
   name: "Register",
@@ -77,5 +72,4 @@ export default {
     margin: 10px 0;
   }
 }
-
 </style>
