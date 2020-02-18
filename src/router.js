@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Manage from './views/Register.vue'
 import Details from './views/Details.vue'
+import Donate from './views/Donate.vue'
 import Imprint from './views/Imprint.vue'
 import Privacy from './views/Privacy.vue'
 
@@ -26,6 +27,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: Manage
+    },
+    {
+      path: '/donate',
+      name: 'donate',
+      component: Donate
     },
     {
       path: '/about',
