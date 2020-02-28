@@ -1,4 +1,4 @@
-NavBar<template>
+<template>
   <nav v-bind:class="{ open: navStateOpen }" class="main-nav">
     <router-link to="/" class="nav-item nav-item--logo" exact-active-class="active">
       Pool
@@ -166,6 +166,7 @@ export default {
 
 @media only screen and (max-width: 1100px) {
   .main-nav {
+    top: 50px;
     .nav-menu {
       .nav-item {
         padding: 0 40px;
@@ -174,9 +175,10 @@ export default {
   }
 }
 
+
 @media only screen and (max-width: 992px) {
   .main-nav {
-    top: 80px;
+    top: 50px;
     .lang {
       margin: 20px auto;
     }
@@ -294,6 +296,18 @@ export default {
             border-top: var(--border-sm_dark);
           }
         }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .main-nav {
+    top: 80px;
+    .nav-menu {
+      .nav-item {
+        padding: 0 40px;
       }
     }
   }
