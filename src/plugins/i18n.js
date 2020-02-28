@@ -12,7 +12,7 @@ export const i18n = new VueI18n({
       register2: 'Register your node',
       nav_register: 'Register',
       join: 'Join the Dock!',
-      nodedock: 'The dock for your node',
+      nodedock: 'IOTA Nodes of the community - for the community!',
       points: 'Points',
       rank: 'Rank',
       imprint: 'Legal Notice',
@@ -31,14 +31,15 @@ export const i18n = new VueI18n({
       node_update: {
         title: 'Update node',
         description: 'To update a node, please fill out the form and run it on your node. If you do not use the same PASSWORD when adding a new node, the node will lose its points in the Dock.',
-      }
+      },
+      footer: require('./translations/footer').en()
     },
     de: {
       register: 'Registriere deine IOTA-Node und werde Teil der Community. Wir unterstützen IRI- und Hornet-Nodes.',
       register2: 'Registriere deine Node',
       nav_register: 'Registrieren',
       join: 'Join the Dock!',
-      nodedock: 'Der Hafen für deine Node',
+      nodedock: 'IOTA Nodes von der Community - für die Community!',
       points: 'Punkte',
       rank: 'Rang',
       imprint: 'Impressum',
@@ -57,7 +58,10 @@ export const i18n = new VueI18n({
       node_update: {
         title: 'Node updaten',
         description: 'Um eine Node zu updaten, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Sollte beim wieder hinzufügen nicht das gleiche PASSWORD verwendet werden, verliert die Node ihre Punkte im Dock.'
-      }
+      },
+      footer: require('./translations/footer').de()
     }
   }
 })
+
+console.log("footer", require('./translations/footer'))

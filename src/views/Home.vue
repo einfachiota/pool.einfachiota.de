@@ -21,7 +21,7 @@
       </vue-particles>
     <div class="hero">
      
-      <h1 class="heading">Tangle Dock</h1>
+      <h1 class="heading">IOTA Node Pool</h1>
       <p class="sub-heading"><i18n path="nodedock"></i18n></p>
      
     </div>

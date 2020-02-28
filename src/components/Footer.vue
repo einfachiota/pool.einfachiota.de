@@ -1,13 +1,96 @@
 <template>
   <div class="footer">
-    <div class="row footer-bottom">
-       <div class="footer-bottom-col footer-bottom-col__left">
-        <a target ="_blank" class="footer-main-link" href="https://status.tanglebay.org">Status</a>
+    <div class="row">
+      <div class="footer-main">
+        <router-link to="/" class="footer-logo" exact-active-class="active">
+          <img alt="einfachIOTA" class="logo" src="../assets/logo.svg" />
+        </router-link>
+        <p>{{ $t('footer.ei_description') }}</p>
+        <p>{{ $t('footer.ei_mission') }}</p>
       </div>
-      <div class="footer-bottom-col">Made with <span class="heart">&#10084;</span> by <a target="_blank" class="footer-main-link footer-main-link__inline" href="https://www.einfachIOTA.de">einfachIOTA</a>&<a target="_blank" class="footer-main-link footer-main-link__inline" href="https://tanglebay.org">Tangle Bay</a></div>
-      <div class="footer-bottom-col footer-bottom-col__right">
-        <a class="footer-main-link" href="https://tanglebay.org/legal-notice/"><i18n path="imprint"></i18n></a>
-        <a class="footer-main-link" href="https://tanglebay.org/privacy-policy/"><i18n path="privacy"></i18n></a>
+      <div class="footer-main">
+        <h4>{{ $t('footer.title') }}</h4>
+        <div class="divider"></div>
+        <!--<a href="https://magazin.einfachiota.de" target="_blank" class="footer-main-link">Magazin</a>-->
+        <a
+          href="https://blog.einfachiota.de/"
+          target="_blank"
+          class="footer-main-link"
+        >
+          {{ $t('footer.blog') }}</a
+        >
+        <a
+          href="https://shop.einfachiota.de/"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.magazine') }}</a
+        >
+        <a
+          href="https://community.einfachiota.de/"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.community') }}</a
+        >
+      </div>
+      <div class="footer-main">
+        <h4>{{ $t('footer.partners') }}</h4>
+        <div class="divider"></div>
+        <a href="https://tanglebay.org" target="_blank" class="footer-main-link"
+          >Tangle Bay</a
+        >
+        <a href="https://iotashops.com" target="_blank" class="footer-main-link"
+          >IOTAshops.com</a
+        >
+      </div>
+      <div class="footer-main">
+        <h4>{{ $t('footer.iota_title') }}</h4>
+        <div class="divider"></div>
+        <a
+          href="https://www.iota.org"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.iota_web') }}</a
+        >
+        <a
+          href="https://blog.iota.org"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.iota_news') }}</a
+        >
+        <a href="/#/pages/linkliste" class="footer-main-link">{{
+          $t('footer.iota_more')
+        }}</a>
+      </div>
+    </div>
+    <div class="row footer-bottom">
+      <div class="footer-bottom-col">© einfachIOTA</div>
+      <div class="footer-bottom-col">
+        <a
+          href="https://discord.gg/WdfXseU"
+          target="_blank"
+          class="footer-main-link"
+          >Discord</a
+        >
+        <a
+          href="https://twitter.com/einfachIOTA"
+          target="_blank"
+          class="footer-main-link"
+          >Twitter</a
+        >
+        <a
+          href="https://github.com/einfachiota"
+          target="_blank"
+          class="footer-main-link"
+          >Github</a
+        >
+      </div>
+      <div class="footer-bottom-col">
+        <router-link to="imprint" class="footer-main-link">{{
+          $t('footer.imprint')
+        }}</router-link>
+        <router-link to="privacy" class="footer-main-link">{{
+          $t('footer.privacy_policy')
+        }}</router-link>
       </div>
     </div>
   </div>
@@ -15,16 +98,13 @@
 
 <style lang="scss">
 .footer {
-  background-color: var(--dark);
+  background-color: var(--white);
   width: 100%;
-  padding: 15px 50px 0;
+  padding: 50px 50px 0;
   box-sizing: border-box;
   text-align: center;
   border-top: 5px solid var(--primary);
-  color: var(--primary);
-  .heart {
-    color: red;
-  }
+  color: var(--dark);
   .row {
     display: flex;
     justify-content: space-between;
@@ -39,6 +119,7 @@
     }
     .logo {
       height: 100px;
+      margin-left: -6px;
     }
     h4 {
       font-size: 20px;
@@ -51,7 +132,7 @@
     }
     .footer-main-link {
       display: block;
-      color: var(--primary);
+      color: var(--dark);
       margin: 0;
       line-height: 2;
       font-size: 16px;
@@ -60,41 +141,30 @@
       &:hover {
         color: var(--primary);
       }
-      &:visited {
-        color: var(--primary);
-      }
     }
   }
   .footer-bottom {
-    padding: 15px 20px;
+    padding: 15px 50px;
     margin: 0 -50px;
-    color: var(--primary);
+    border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.75);
     .footer-bottom-col {
-      width: 33%;
-      &__left {
-        text-align: left;
-      }
-      &__right {
-        text-align: right;
-      }
       .footer-main-link {
         margin: 0 10px;
-        color: var(--primary);
-        text-decoration: none;
-        &:visited {
-          color: var(--primary);
-
-        }
         &:first-child {
           margin-left: 0;
         }
         &:last-child {
           margin-right: 0;
         }
-        &__inline {
-          margin: 0 3px;
-          text-decoration: underline;
-        }
+      }
+    }
+    .footer-main-link {
+      color: rgba(0, 0, 0, 0.75);
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+      &:hover {
+        color: var(--primary);
       }
     }
   }

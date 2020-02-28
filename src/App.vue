@@ -54,26 +54,26 @@ p {
   line-height: 1.5;
 }
 :root {
-  --primary: rgba(21, 194, 210, 1);
+  --primary: #00b7c5;
   --primary-darken: #03a3af;
-  --secondary: #0B5D9E;
-  --secondary-2: #5AB0B2;
-  --dark: rgba(33, 48, 59, 1);
-  --darker: #0F3535;
-  --gray: #E2E2E2;
-  --light: #EFEFEF;
-  --white: #FFFFFF;
-  --white_5: rgba(255,255,255,.05);
-  --white_10: rgba(255,255,255,.1);
-  --white_25: rgba(255,255,255,.25);
-  --white_50: rgba(255,255,255,.5);
-  --red: #F16465;
-  --orange: #E69255;
-  --yellow: #E6BE54;
-  --purple: #8F60A8;
+  --secondary: #0b5d9e;
+  --secondary-2: #5ab0b2;
+  --dark: #3d4449;
+  --darker: #0f3535;
+  --gray: #e2e2e2;
+  --light: #efefef;
+  --white: #ffffff;
+  --white_5: rgba(255, 255, 255, 0.05);
+  --white_10: rgba(255, 255, 255, 0.1);
+  --white_25: rgba(255, 255, 255, 0.25);
+  --white_50: rgba(255, 255, 255, 0.5);
+  --red: #f16465;
+  --orange: #e69255;
+  --yellow: #e6be54;
+  --purple: #8f60a8;
   --border-radius: 10px;
   --border-radius-sm: 5px;
-  --box-shadow: 0 3px 6px rgba(0,0,0,.15);
+  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   --transition-in-out: all 0.3s ease-in-out;
 }
 .el-footer {
