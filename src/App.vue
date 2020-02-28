@@ -1,5 +1,6 @@
 <template>
   <el-container>
+      <MetaNav />
     <el-header> 
       <NavBar />
       </el-header>
@@ -12,10 +13,11 @@
   </el-container>
 </template>
 <script>
+import MetaNav from '@/components/MetaNav.vue'
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 export default {
-    components: {NavBar, Footer},
+    components: { MetaNav, NavBar, Footer },
 }
 </script>
 

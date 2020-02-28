@@ -1,7 +1,7 @@
 NavBar<template>
   <nav v-bind:class="{ open: navStateOpen }" class="main-nav">
     <router-link to="/" class="nav-item nav-item--logo" exact-active-class="active">
-      <img alt="Tangle Bay" class="logo" src="../assets/logo.svg">
+      Pool
     </router-link>
 
     <div v-bind:class="{ open: navStateOpen }" class="menu-btn-container" @click="toggleNav">
@@ -77,7 +77,7 @@ export default {
 
 .main-nav {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   z-index: 10;
   height: 70px;
@@ -176,6 +176,7 @@ export default {
 
 @media only screen and (max-width: 992px) {
   .main-nav {
+    top: 80px;
     .lang {
       margin: 20px auto;
     }
