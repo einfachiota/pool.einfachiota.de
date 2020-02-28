@@ -108,7 +108,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white);
+    background-color: var(--dark);
     font-family: "Roboto Slab";
     font-weight: bold;
     text-decoration: none;
@@ -180,9 +180,9 @@ export default {
       margin: 20px auto;
     }
     &.open {
-      background-color: var(--white);
+      background-color: var(--dark);
       &.normal {
-        background-color: var(--white);
+        background-color: var(--dark);
       }
     }
     .menu-btn-container {
@@ -216,7 +216,7 @@ export default {
         }
       }
       &.open {
-        background-color: var(--white_10);
+        background-color: var(--dark);
         .menu-btn {
           transform: rotate(180deg);
         }
@@ -283,10 +283,10 @@ export default {
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        background-color: var(--white);
+        background-color: var(--dark);
       }
       &.normal {
-        background-color: var(--white);
+        background-color: var(--dark);
         .nav-item {
           border-bottom: var(--border-sm_dark);
           &:first-child {
