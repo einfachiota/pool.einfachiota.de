@@ -60,7 +60,7 @@ p {
   --primary-darken: #03a3af;
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
-  --dark: #3d4449;
+  --dark: rgb(17, 47, 46);
   --darker: #0f3535;
   --gray: #e2e2e2;
   --light: #efefef;
