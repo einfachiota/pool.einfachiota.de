@@ -32,7 +32,13 @@ export const i18n = new VueI18n({
         title: 'Update node',
         description: 'To update a node, please fill out the form and run it on your node. If you do not use the same PASSWORD when adding a new node, the node will lose its points in the Dock.',
       },
-      footer: require('./translations/footer').en()
+      footer: require('./translations/footer').en(),
+      donate: {
+        title: 'Donations (BETA)',
+        subtitle: 'Made by the community to support the communty',
+        description: 'To Donate some MIOTAs, please press the button below!',
+        button_text: 'Donate IOTA',
+      }
     },
     de: {
       register: 'Registriere deine IOTA-Node und werde Teil der Community. Wir unterstützen IRI- und Hornet-Nodes.',
@@ -59,7 +65,13 @@ export const i18n = new VueI18n({
         title: 'Node updaten',
         description: 'Um eine Node zu updaten, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Sollte beim wieder hinzufügen nicht das gleiche PASSWORD verwendet werden, verliert die Node ihre Punkte im Dock.'
       },
-      footer: require('./translations/footer').de()
+      footer: require('./translations/footer').de(),
+      donate: {
+        title: 'Spenden (BETA)',
+        subtitle: 'Einer für alle, alle für einen!',
+        description: 'Wenn du ein paar MIOTA an die Nodebetreiber spenden willst, drücke bitte den Button!',
+        button_text: 'Spende IOTA',
+      }
     }
   }
 })

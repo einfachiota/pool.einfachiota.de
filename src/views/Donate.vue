@@ -2,12 +2,12 @@
   <div class="donate">
     <div class="content">
       <div class="container">
-        <h1 class="heading">Donations (BETA)</h1>
+        <h1 class="heading"><i18n path="donate.title"></i18n></h1>
         <div class="divider"></div>
-        <h2>Einer für alle, alle für einen!</h2>
-        <p>Wenn du ein paar IOTA an die Nodebetreiber spenden willst, drücke bitte den Button!</p>
+        <h2><i18n path="donate.subtitle"></i18n></h2>
+        <p><i18n path="donate.description"></i18n></p>
         <br />
-        <iota-payment class="iota-pay">Donate IOTA</iota-payment>
+        <iota-payment class="iota-pay"><i18n path="donate.button_text"></i18n></iota-payment>
       </div>
     </div>
   </div>
