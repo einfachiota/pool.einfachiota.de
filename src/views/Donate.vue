@@ -5,6 +5,7 @@
         <h1 class="heading">Donations (BETA)</h1>
         <div class="divider"></div>
         <h2>Einer für alle, alle für einen!</h2>
+        <p>Wenn du ein paar IOTA an die Nodebetreiber spenden willst, drücke bitte den Button!</p>
         <br />
         <iota-payment class="iota-pay">Donate IOTA</iota-payment>
       </div>
