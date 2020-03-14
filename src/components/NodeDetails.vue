@@ -114,15 +114,6 @@ p {
   background-color: var(--light);
   max-width: 1024px;
 }
-.el-tag.el-tag--danger {
-  background: #d05656;
-  color: rgb(225, 231, 239);
-}
-.el-tag.el-tag--success {
-  background: #3cc13c;
-  color: rgb(225, 231, 239);
-}
-
 .node-key {
   font-size: 0.7em;
   color: var(--darker);
