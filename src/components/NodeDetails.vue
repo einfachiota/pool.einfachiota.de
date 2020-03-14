@@ -4,7 +4,7 @@
     <el-card class="node-box">
       <div slot="header" class="clearfix">
         <div class="left">
-        <h2>{{details.name}}</h2>
+          <h2>{{details.name}}</h2>
           <p>
             <strong>ID:</strong>
             {{details.key}}
@@ -25,6 +25,9 @@
             <strong>Donationaddress:</strong>
             {{details.address}}
           </p>
+          <el-button v-clipboard:copy="details.address" v-clipboard:success="onCopy">Copy address<span v-if="copy">   &#10004;</span></el-button>
+          <br />
+          <br />
         </div>
       </div>
       <table class="el-table">
@@ -54,9 +57,10 @@ export default {
       loading: false,
       url: "https://score.tanglebay.org/nodes/",
       details: {
-        commands: []
+        commands: [],
       },
-      intervalid1: null
+      intervalid1: null,
+      copy: false
     };
   },
   methods: {
@@ -70,6 +74,16 @@ export default {
           console.log("what", response);
           self.details = response;
         });
+    },
+    onCopy() {
+      this.copySuccess()
+    },
+    copySuccess() {
+      this.copy = true
+      let self = this;
+      setTimeout(function() {
+        self.copy = false
+      }, 500)
     }
   },
   mounted() {
@@ -102,9 +116,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 p {
-  word-break: break-all; 
+  word-break: break-all;
 }
 .headline {
   text-align: center;
@@ -138,4 +151,5 @@ p {
 .right {
   float: right;
 }
+
 </style>
