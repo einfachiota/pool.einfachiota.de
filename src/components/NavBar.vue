@@ -183,9 +183,9 @@ export default {
       margin: 20px auto;
     }
     &.open {
-      background-color: var(--dark);
+      background-color: var(--white);
       &.normal {
-        background-color: var(--dark);
+        background-color: var(--white);
       }
     }
     .menu-btn-container {
@@ -207,7 +207,7 @@ export default {
           position: absolute;
           height: 3px;
           width: 100%;
-          background-color: var(--light);
+          background-color: var(--dark);
           border-radius: var(--border-radius-sm);
           transition: all 300ms ease-in-out;
         }
@@ -219,7 +219,7 @@ export default {
         }
       }
       &.open {
-        background-color: var(--dark);
+        background-color: var(--white);
         .menu-btn {
           transform: rotate(180deg);
         }
@@ -237,7 +237,7 @@ export default {
       }
       &:hover {
         cursor: pointer;
-        background-color: var(--white_10);
+        background-color: var(--gray);
         .center {
           width: 15px;
         }
@@ -286,7 +286,7 @@ export default {
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        background-color: var(--dark);
+        background-color: var(--white);
       }
       &.normal {
         background-color: var(--dark);
