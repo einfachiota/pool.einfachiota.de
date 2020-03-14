@@ -146,6 +146,10 @@ button.el-button.el-button--light {
 .nav-item {
   color:var(--primary)
 }
+
+.el-collapse-item__header {
+    font-size: 1em !important;
+}
 @media only screen and (max-width: 1260px) {
   .container {
     margin: 0 auto;

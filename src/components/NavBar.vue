@@ -22,6 +22,9 @@
       <router-link v-on:click.native="navStateOpen = false" to="/donate" class="nav-item" active-class="active">
         <span ><i18n path="donate.title"></i18n></span>
       </router-link>
+       <router-link v-on:click.native="navStateOpen = false" to="/faq" class="nav-item" active-class="active">
+        <span>FAQ</span>
+      </router-link>
       <div v-on:click="switchLanguage()" class="lang">
           <!-- <span>Switch Language </span> -->
           <img v-if="this.$i18n.locale != 'de'"

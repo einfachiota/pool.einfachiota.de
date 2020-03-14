@@ -41,6 +41,15 @@
         <br>
       </div>
     </div>
+     <div class="section">
+      <div class="container">
+        <h2>Was ist der Pool?</h2>
+        <router-link to="/about" class="nav-item" exact-active-class="active">
+          Erfahre mehr über den Pool
+        </router-link>
+        <br>
+      </div>
+    </div>
   </div>
 </template>
 
