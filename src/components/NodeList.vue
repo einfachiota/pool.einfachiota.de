@@ -81,11 +81,11 @@ export default {
 .el-table td, .el-table th.is-leaf {
 
   cursor: pointer;
-  background-color: rgb(225, 231, 239);
+  background-color: var(--white);
 }
 .el-table .el-table__row {
   cursor: pointer;
-  background-color: rgb(225, 231, 239);
+  background-color: var(--white);
 }
 
 .el-tag.el-tag--danger {

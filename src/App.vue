@@ -29,8 +29,8 @@ body {
  font-family: 'Open Sans', sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
- color: var(--dark);
- background-color: rgb(225, 231, 239);
+ color: var(--black);
+ background-color: var(--white);
 } 
 h1, h2, h3, h4 {
   margin: 0;
@@ -57,25 +57,31 @@ p {
 }
 :root {
   --primary: #00b7c5;
+  --primary_50: rgba(0,183,197,0.5);
+  --primary_0: rgba(0,183,197,0);
+  --primary_light: #00dbeb;
   --primary-darken: #03a3af;
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
-  --dark: rgb(17, 47, 46);
+  --dark: #3d4449;
+  --dark-transp: rgba(61,68,73,0.5);
   --darker: #0f3535;
   --gray: #e2e2e2;
-  --light: #efefef;
-  --white: #ffffff;
-  --white_5: rgba(255, 255, 255, 0.05);
-  --white_10: rgba(255, 255, 255, 0.1);
-  --white_25: rgba(255, 255, 255, 0.25);
-  --white_50: rgba(255, 255, 255, 0.5);
+  --light: #eaebf3;
+  --light_50: rgba(234,235,243,0.5);
+  --white: #fff;
+  --white_5: hsla(0,0%,100%,0.05);
+  --white_10: hsla(0,0%,100%,0.1);
+  --white_25: hsla(0,0%,100%,0.25);
+  --white_50: hsla(0,0%,100%,0.5);
   --red: #f16465;
   --orange: #e69255;
   --yellow: #e6be54;
   --purple: #8f60a8;
   --border-radius: 10px;
   --border-radius-sm: 5px;
-  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  --transition: all 0.3s ease-in-out;
   --transition-in-out: all 0.3s ease-in-out;
 }
 .el-footer {

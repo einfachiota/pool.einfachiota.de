@@ -85,7 +85,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark);
+  background-color: var(--white);
   border-bottom: 5px solid var(--primary);
   transition: all 200ms ease-in-out;
   .lang {
@@ -108,7 +108,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark);
+    background-color: var(--white);
     font-family: "Roboto Slab";
     font-weight: bold;
     text-decoration: none;

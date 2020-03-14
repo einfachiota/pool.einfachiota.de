@@ -78,7 +78,7 @@ export default {
   height: 50px;
   width: 100%;
   z-index: 1000;
-  background-color: var(--dark);
+  background-color: var(--white);
 
   .logo {
     height: 50px;

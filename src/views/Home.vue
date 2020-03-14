@@ -92,8 +92,8 @@ export default {
 .section {
   padding: 80px 0;
   &-background {
-    color: var(--white);
-    background-color: var(--dark);
+    color: var(--black);
+    background-color: var(--light);
     p {
       max-width: 600px;
       margin: 15px auto 30px;
