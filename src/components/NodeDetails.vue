@@ -107,6 +107,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+p {
+  word-break: break-all; 
+}
 .headline {
   text-align: center;
 }
