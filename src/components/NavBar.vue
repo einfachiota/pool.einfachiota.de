@@ -1,6 +1,6 @@
 <template>
   <nav v-bind:class="{ open: navStateOpen }" class="main-nav">
-    <router-link to="/" class="nav-item nav-item--logo" exact-active-class="active">
+    <router-link to="/" class="nav-item nav-item--logo">
       Pool
     </router-link>
 
@@ -13,13 +13,15 @@
     </div>
 
     <div v-bind:class="{ open: navStateOpen }" class="nav-menu">
-      <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" active-class="active">
+      <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" exact-active-class="active">
         <span >Home</span>
       </router-link>
       <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
       <span ><i18n path="nav_register"></i18n></span>
       </router-link>
-
+      <router-link v-on:click.native="navStateOpen = false" to="/donate" class="nav-item" active-class="active">
+        <span ><i18n path="donate.title"></i18n></span>
+      </router-link>
       <div v-on:click="switchLanguage()" class="lang">
           <!-- <span>Switch Language </span> -->
           <img v-if="this.$i18n.locale != 'de'"
