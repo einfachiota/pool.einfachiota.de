@@ -4,11 +4,6 @@
     <el-card class="node-box">
       <div slot="header" class="clearfix">
         <div class="left">
-        <div class="right">
-          <el-tag
-                :type="`${details.available ? 'success' : 'danger'}`"
-              >{{details.available ? "online" : "offline"}}</el-tag>
-        </div>
         <h2>{{details.name}}</h2>
           <p>
             <strong>ID:</strong>
