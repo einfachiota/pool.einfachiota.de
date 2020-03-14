@@ -27,6 +27,7 @@
     </div>
     <div class="section">
       <div class="container">
+        <h2>Nodes Leaderboard</h2>
         <NodeList />
       </div>
     </div>
