@@ -11,6 +11,7 @@ import VueClipboard from 'vue-clipboard2'
 
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
+Vue.use(require('vue-moment'));
 
 import IotaPayment from 'vue-iota-payment';
 
