@@ -6,13 +6,13 @@
     :default-sort="{prop: 'score', order: 'ascending'}"
   >
     <el-table-column label="Date" align="left">
-      <template slot-scope="scope">{{ scope.row.txInfo.timestamp | moment('MM.DD.YYYY, hh:mm') }}</template>
+      <template slot-scope="scope">{{ scope.row.txInfo.timestamp | moment('DD.MM.YYYY HH:mm') }}</template>
     </el-table-column>
-    <el-table-column width="120px" prop="txInfo.value" label="IOTA" align="left"></el-table-column>
+    <el-table-column prop="txInfo.value" label="IOTA" align="left"></el-table-column>
     <el-table-column label="Message" align="left">
       <template slot-scope="scope">{{scope.row.txInfo.message}}</template>
     </el-table-column>
-    <el-table-column label="Link" align="left">
+    <el-table-column label="Link" align="right">
       <template slot-scope="scope"><a :href="'https://thetangle.org/transaction/' + scope.row.txInfo.hash" target="_blank">Show</a></template>
     </el-table-column>
   </el-table>
@@ -57,13 +57,15 @@ export default {
       var filter = {
         payed: true
       };
-      return this.payments.filter(function(item) {
+       let array = this.payments.filter(function(item) {
         for (var key in filter) {
           if (item[key] === undefined || item[key] != filter[key])
             return false;
         }
         return true;
       });
+
+      return array.reverse();
     }
   },
   mounted() {
