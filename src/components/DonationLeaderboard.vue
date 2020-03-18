@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       loading: false,
-      url: "https://handler.tanglebay.org/payments",
+      url: "https://pool-donations.einfachiota.de/payments",
       payments: [],
       intervalid1: null
     };
