@@ -37,7 +37,7 @@ a {
 }
 
 .donate {
-  margin: 50px;
+  margin-top: 50px;
 }
 
 .iota-pay {
