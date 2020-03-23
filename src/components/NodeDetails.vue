@@ -127,14 +127,15 @@ export default {
     },
     fetchPayments() {
       let self = this;
-      fetch('https://pool-donations.einfachiota.de/payouts')
+      fetch('https://pool-donations.einfachiota.de/payouts/'+self.nodeKey)
         .then(function(response) {
           return response.json();
         })
         .then(function(response) {
-          let payouts = response.filter(p => typeof p.data != 'undefined')
-          self.payouts = payouts.filter(payout => payout.data.nodeId == self.nodeKey).reverse();
-          self.totalValue = self.payouts.reduce( ( sum, { value } ) => sum + value , 0)
+          // let payouts = response.filter(p => typeof p.data != 'undefined')
+          // self.payouts = payouts.filter(payout => payout.data.nodeId == self.nodeKey).reverse();
+          self.payouts = response
+          self.totalValue = response.reduce( ( sum, { value } ) => sum + value , 0)
           self.payoutsLoaded = true
         });
     },
