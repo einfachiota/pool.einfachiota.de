@@ -2,7 +2,7 @@
   <div class="home">
     <div class="section section-background">
       <div class="container howto">
-        <h1 class="heading">Be part of the Community Dock</h1>
+        <h1 class="heading">Be part of the Community Pool</h1>
         <p class="sub-heading">Register your IOTA Node</p>
         <p class="text">
           <i18n path="node_register.description"></i18n>
