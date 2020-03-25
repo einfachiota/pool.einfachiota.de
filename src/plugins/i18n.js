@@ -55,7 +55,8 @@ export const i18n = new VueI18n({
         q7: 'What can I do if my donation was not paid out?',
         a7: 'We assume no liability for lost IOTA. However, we do our best to operate the service smoothly and are anxious to ensure a smooth process. If errors are detected, please report the error.',
         no_question: 'Your question is not there?',
-        ask_discord: 'No prob! Join our <a href="https://discord.tanglebay.org/" target="_blank">Discord</a> in the community #pool channel.',
+        ask_discord: 'No prob! Join our',
+        ask_discord2: 'in the community #pool channel.',
         h2: 'All questions at once',
       }
     },
@@ -107,7 +108,8 @@ export const i18n = new VueI18n({
         q7: 'Was kann ich tun, wenn meine Spende nicht ausgezahlt wurde?',
         a7: 'Wir übernehmen keine Haftung für verlorengegangene IOTA. Wir bemühen uns aber den Service reibunglos zu betreiben und sind bestrebt einen reibungslosen Ablauf zu gewährleisten. Sollten Fehler erkannt werden, so bitten wir um eine entsprechende Meldung des Fehlers.',
         no_question: 'Deine Frage ist nicht dabei?',
-        ask_discord: 'Kein problem! Melde dich in unserem <a href="https://discord.tanglebay.org/" target="_blank">Discord im Community #pool Channel</a>.',
+        ask_discord: 'Kein problem! Melde dich in unserem',
+        ask_discord2: 'im Community #pool Channel.',
         h2: 'Alle Fragen auf einen Blick',
       }
     }

@@ -2,36 +2,37 @@
   <div class="faq">
     <div class="content">
       <div class="container">
-        <h1 class="heading">FAQ - Frequently Asked Questions</h1>
+        <h2 class="heading">FAQ - Frequently Asked Questions</h2>
         <div class="divider"></div>
-        <h2><i18n path="faq.h2"></i18n></h2>
-
+        <h3><i18n path="faq.h2"></i18n></h3>
+        <br />
         <el-collapse accordion>
-            <el-collapse-item title=<i18n path="faq.q1"></i18n> name="1">
+            <el-collapse-item :title="$t('faq.q1')" name="1">
                 <div><i18n path="faq.a1"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q2"></i18n> name="2">
+            <el-collapse-item :title="$t('faq.q2')" name="2">
                 <div><i18n path="faq.a2"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q3"></i18n> name="3">
+            <el-collapse-item :title="$t('faq.q3')" name="3">
                 <div><i18n path="faq.a3"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q4"></i18n> name="4">
+            <el-collapse-item :title="$t('faq.q4')" name="4">
                 <div><i18n path="faq.a4"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q5"></i18n> name="5">
+            <el-collapse-item :title="$t('faq.q5')" name="5">
                 <div><i18n path="faq.a5"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q6"></i18n> name="6">
+            <el-collapse-item :title="$t('faq.q6')" name="6">
                 <div><i18n path="faq.a6"></i18n></div>
             </el-collapse-item>
-            <el-collapse-item title=<i18n path="faq.q7"></i18n> name="7">
+            <el-collapse-item :title="$t('faq.q7')" name="7">
                 <div><i18n path="faq.a7"></i18n></div>
             </el-collapse-item>
         </el-collapse>
-        <h2><i18n path="faq.no_question"></i18n></h2>
+        <br />
+        <h3><i18n path="faq.no_question"></i18n></h3>
         <p>
-          <strong><i18n path="faq.ask_discord"></i18n></strong>
+          <strong><i18n path="faq.ask_discord"></i18n> <a href="https://discord.tanglebay.org/" target="_blank">Discord</a> <i18n path="faq.ask_discord2"></i18n></strong>
         </p>
       </div>
     </div>
