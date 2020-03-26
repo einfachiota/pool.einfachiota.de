@@ -7,12 +7,12 @@
     
     @row-click="rowClicked"
   >
-    <el-table-column width="60px" class="el-table__header-row" prop="" :label="$t('rank')" align="left">
+    <el-table-column width="60px" class="el-table__header-row" prop="" :label="$t('home.table_rank')" align="left">
           <template slot-scope="scope">#{{ scope.$index + 1 }}</template>
     </el-table-column>
-    <el-table-column width="100px" prop="points" :label="$t('points')" align="left"></el-table-column>
-    <el-table-column prop="name" label="Name" align="left"></el-table-column>
-    <el-table-column width="140px" label="Version" align="right">
+    <el-table-column width="100px" prop="points" :label="$t('home.table_points')" align="left"></el-table-column>
+    <el-table-column prop="name" :label="$t('home.table_name')" align="left"></el-table-column>
+    <el-table-column width="140px" :label="$t('home.table_version')" align="right">
       <template slot-scope="scope">{{ scope.row.appVersion ? `${scope.row.appName} ${scope.row.appVersion}` : "-" }}</template>
     </el-table-column>
   </el-table>

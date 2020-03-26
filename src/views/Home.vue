@@ -21,31 +21,33 @@
       </vue-particles>
     <div class="hero">
      
-      <h1 class="heading">IOTA Node Pool</h1>
-      <p class="sub-heading"><i18n path="nodedock"></i18n></p>
+      <h1 class="heading"><i18n path="home.headline1"></i18n></h1>
+      <p class="sub-heading"><i18n path="home.headline2"></i18n></p>
      
     </div>
     <div class="section">
       <div class="container">
-        <h2>Nodes Leaderboard</h2>
+        <h2><i18n path="home.table_head"></i18n></h2>
+        <br />
         <NodeList />
       </div>
     </div>
     <div class="section section-background">
       <div class="container">
-        <h2><i18n path="join"></i18n></h2>
-        <p><i18n path="register"></i18n></p>
+        <h2><i18n path="home.pool_join"></i18n></h2>
+        <p><i18n path="home.pool_register_desc"></i18n></p>
         <router-link to="/register" class="nav-item" exact-active-class="active">
-          <i18n path="register2"></i18n>
+          <i18n path="home.pool_register_link"></i18n>
         </router-link>
         <br>
       </div>
     </div>
      <div class="section">
       <div class="container">
-        <h2>Was ist der Pool?</h2>
-        <router-link to="/about" class="nav-item" exact-active-class="active">
-          Erfahre mehr über den Pool
+        <h2><i18n path="home.pool_faq_head"></i18n></h2>
+        <br />
+        <router-link to="/faq" class="nav-item" exact-active-class="active">
+          <i18n path="home.pool_faq_desc"></i18n>
         </router-link>
         <br>
       </div>

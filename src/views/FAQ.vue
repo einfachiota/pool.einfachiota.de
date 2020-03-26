@@ -4,7 +4,7 @@
       <div class="container">
         <h2 class="heading">FAQ - Frequently Asked Questions</h2>
         <div class="divider"></div>
-        <h3><i18n path="faq.h2"></i18n></h3>
+        <h3><i18n path="faq.headline2"></i18n></h3>
         <br />
         <el-collapse accordion>
             <el-collapse-item :title="$t('faq.q1')" name="1">

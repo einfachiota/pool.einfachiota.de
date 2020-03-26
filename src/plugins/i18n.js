@@ -8,12 +8,21 @@ export const i18n = new VueI18n({
   fallbackLocale: 'de',
   messages: {
     en:{
-      register: 'Register your IOTA node and be part of the Community. We support IRI and Hornet nodes.',
-      register2: 'Register your node',
+      home: {
+        headline1: 'IOTA Node Pool',
+        headline2: 'IOTA Nodes of the community - for the community!',
+        table_head: 'Pool Leaderboard',
+        table_rank: 'Rank',
+        table_points: 'Points',
+        table_name: 'Name',
+        table_version: 'Version',
+        pool_join: 'Join the Pool!',
+        pool_register_desc: 'Register your IOTA node and be part of the Community. We support IRI and Hornet nodes.',
+        pool_register_link: 'Register your node',
+        pool_faq_head: 'What is the pool?',
+        pool_faq_desc: 'Learn more about the pool',
+      },
       nav_register: 'Register',
-      join: 'Join the Pool!',
-      nodedock: 'IOTA Nodes of the community - for the community!',
-      points: 'Points',
       rank: 'Rank',
       imprint: 'Legal Notice',
       privacy: 'Privacy Policy',
@@ -62,13 +71,21 @@ export const i18n = new VueI18n({
       }
     },
     de: {
-      register: 'Registriere deine IOTA-Node und werde Teil der Community. Wir unterstützen IRI- und Hornet-Nodes.',
-      register2: 'Registriere deine Node',
+      home: {
+        headline1: 'IOTA Node Pool',
+        headline2: 'IOTA Nodes von der Community - für die Community!',
+        table_head: 'Pool Rangliste',
+        table_rank: 'Rang',
+        table_points: 'Punkte',
+        table_name: 'Name',
+        table_version: 'Version',
+        pool_join: 'Mach mit!',
+        pool_register_desc: 'Registriere deine IOTA-Node und werde Teil der Community. Wir unterstützen IRI- und Hornet-Nodes.',
+        pool_register_link: 'Registriere deine Node',
+        pool_faq_head: 'Was ist der Pool?',
+        pool_faq_desc: 'Erfahre mehr über den Pool',
+      },
       nav_register: 'Registrieren',
-      join: 'Mach mit!',
-      nodedock: 'IOTA Nodes von der Community - für die Community!',
-      points: 'Punkte',
-      rank: 'Rang',
       imprint: 'Impressum',
       privacy: 'Datenschutz',
       register_title: 'Sei ein Teil des Community Pools',
@@ -95,6 +112,7 @@ export const i18n = new VueI18n({
         button_text: 'Spende IOTA',
       },
       faq: {
+        headline2: 'Alle Fragen auf einen Blick',
         q1: 'Was ist der Pool?',
         a1: 'Der Pool bietet den Nodebetreiben die Möglichkeit an einem öffentlichen Zugangspunkt für Trinity teilzunehmen, ohne dass selbst die eigene Adresse öffentlich gemacht werden muss. Dabei bietet der Pool eine Möglichkeit eine Donation von Nutzern zu erhalten.',
         q2: 'Wie kann ich spenden?',
@@ -112,7 +130,6 @@ export const i18n = new VueI18n({
         no_question: 'Deine Frage ist nicht dabei?',
         ask_discord: 'Kein problem! Melde dich in unserem',
         ask_discord2: 'im Community #pool Channel.',
-        h2: 'Alle Fragen auf einen Blick',
       }
     }
   }

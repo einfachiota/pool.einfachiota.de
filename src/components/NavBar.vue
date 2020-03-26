@@ -16,15 +16,16 @@
       <router-link v-on:click.native="navStateOpen = false" to="/" class="nav-item" exact-active-class="active">
         <span >Home</span>
       </router-link>
-      <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
-      <span ><i18n path="nav_register"></i18n></span>
-      </router-link>
       <router-link v-on:click.native="navStateOpen = false" to="/donate" class="nav-item" active-class="active">
         <span ><i18n path="donate.title"></i18n></span>
       </router-link>
-       <router-link v-on:click.native="navStateOpen = false" to="/faq" class="nav-item" active-class="active">
+      <router-link v-on:click.native="navStateOpen = false" to="/register" class="nav-item" active-class="active">
+      <span ><i18n path="nav_register"></i18n></span>
+      </router-link>
+      <router-link v-on:click.native="navStateOpen = false" to="/faq" class="nav-item" active-class="active">
         <span>FAQ</span>
       </router-link>
+      <a href="https://status.tanglebay.org" target="_blank" class="nav-item" active-class="active">Status</a>
       <div v-on:click="switchLanguage()" class="lang">
           <!-- <span>Switch Language </span> -->
           <img v-if="this.$i18n.locale != 'de'"
