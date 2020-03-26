@@ -1,9 +1,9 @@
 <template>
   <div>
     <p>
-      <i18n path="node_register.howto1"></i18n>
+      <i18n path="node_add.howto1"></i18n>
     </p>
-
+    <br />
     <el-form
     v-if="!showCode"
       :model="ruleForm"

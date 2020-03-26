@@ -2,20 +2,18 @@
   <div class="home">
     <div class="section section-background">
       <div class="container howto">
-        <h1 class="heading">Be part of the Community Pool</h1>
-        <p class="sub-heading">Register your IOTA Node</p>
+        <h2 class="heading"><i18n path="register_title"></i18n></h2>
+        <br />
         <p class="text">
-          <i18n path="node_register.description"></i18n>
+          <i18n path="register_desc"></i18n>
         </p>
       </div>
     </div>
     <div class="section">
       <div class="container howto">
         <h2>
-          <i18n path="node_register.title"></i18n>
+          <i18n path="node_add.title"></i18n>
         </h2>
-        <h3>HowToRegister</h3>
-
         <AddNodeForm />
       </div>
     </div>
@@ -24,7 +22,6 @@
         <h2>
           <i18n path="node_delete.title"></i18n>
         </h2>
-        <h3>HowToDelete</h3>
         <RemoveNodeForm />
       </div>
     </div>
@@ -36,7 +33,6 @@
         <h2>
           <i18n path="node_update.title"></i18n>
         </h2>
-        <h3>HowToUpdate</h3>
         <UpdateNodeForm />
       </div>
     </div>

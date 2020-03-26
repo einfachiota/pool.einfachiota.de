@@ -3,7 +3,7 @@
     <p>
       <i18n path="node_update.description"></i18n>
     </p>
-
+    <br />
     <el-form
     v-if="!showCode"
       :model="ruleForm"
