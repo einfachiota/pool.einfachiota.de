@@ -149,6 +149,10 @@ button.el-button.el-button--light {
 
 .el-collapse-item__header {
     font-size: 1em !important;
+    line-height: 1.4em !important;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    height:inherit!important;
 }
 @media only screen and (max-width: 1260px) {
   .container {
