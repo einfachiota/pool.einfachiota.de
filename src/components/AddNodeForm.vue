@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      <i18n path="node_add.howto1"></i18n>
+      <i18n path="node_add.description"></i18n>
     </p>
     <br />
     <el-form
@@ -42,7 +42,7 @@
     </el-form>
     <div v-else>
         <p>
-        <i18n path="node_register.howto2"></i18n>
+        <i18n path="register_run"></i18n>
         </p>
         <pre class="code">
             {{ command }}
@@ -50,7 +50,7 @@
         <el-button type="primary" v-clipboard:copy="command">Copy</el-button>
         <el-button @click="edit()">Edit</el-button>
         <p>
-        <i18n path="node_register.attention"></i18n>
+        <i18n path="node_add.attention"></i18n>
         </p>
     </div>
   </div>

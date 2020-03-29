@@ -28,10 +28,10 @@ export const i18n = new VueI18n({
       privacy: 'Privacy Policy',
       register_title: 'Be part of the Community Pool',
       register_desc: 'To make your node available to the community via Tangle Bay, it is necessary to add it to the load balancer. It is not necessary to install any special software or run any other applications.',
+      register_run: 'Please execute this in your terminal:',
       node_add: {
         title: 'Add node',
-        howto1: 'To add a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes from the desired node and you are not trying to add a foreign node.',
-        howto2: 'Please execute this in your terminal:',
+        description: 'To add a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes from the desired node and you are not trying to add a foreign node.',
         attention: 'Please note that after successfully adding a new node, you must carefully save the password which you receive. With the password you can remove your node at any time, if you are no longer interested.',
       },
       node_delete: {
@@ -90,10 +90,10 @@ export const i18n = new VueI18n({
       privacy: 'Datenschutz',
       register_title: 'Sei ein Teil des Community Pools',
       register_desc: 'Um deine Node der Community über den Pool zur Verfügung zu stellen, ist es notwendig, ihn den Load Balancern hinzuzufügen. Es ist nicht notwendig, eine spezielle Software zu installieren oder andere Anwendungen auszuführen.',
+      register_run: 'Bitte führe den Befehl in deiner Konsole aus: ',
       node_add: {
         title: 'Node hinzufügen',
-        howto1: 'Um eine Node hinzuzufügen, fülle bitte das Formular aus und führe ihn auf deiner Node aus. Eine CURL-Request wird an die Load Balancer von Tangle Bay gesendet und es wird überprüft, ob die Anforderung tatsächlich von der gewünschten Node stammt und du nicht versuchst, eine fremde Node hinzuzufügen.',
-        howto2: 'Bitte führe den Befehl in deiner Konsole aus: ',
+        description: 'Um eine Node hinzuzufügen, fülle bitte das Formular aus und führe ihn auf deiner Node aus. Eine CURL-Request wird an die Load Balancer von Tangle Bay gesendet und es wird überprüft, ob die Anforderung tatsächlich von der gewünschten Node stammt und du nicht versuchst, eine fremde Node hinzuzufügen.',
         attention: 'Bitte beachte, dass nach dem erfolgreichen Hinzufügen einer neuen Node das erhaltene Passwort sorgfältig gespeichert werden muss. Mit dem Passwort kannst du jederzeit deine Node wieder entfernen.' 
       },
       node_delete: {

@@ -28,7 +28,7 @@
     </el-form>
     <div v-else>
         <p>
-        <i18n path="node_register.howto2"></i18n>
+        <i18n path="register_run"></i18n>
         </p>
         <pre class="code">
             {{ command }}
