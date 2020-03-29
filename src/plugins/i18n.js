@@ -126,9 +126,9 @@ export const i18n = new VueI18n({
         q6: 'Kann ich die Spende steuerlich absetzen?',
         a6: 'Eine steuerliche Absetzung der Spende ist nicht möglich, da einfachIOTA keine Spende selbst erhält, sondern nur Vermittler ohne Provision oder andere Vergütung agiert. Die Spenden richten sich immer direkt an die jeweiligen Nodebetreiber und wir haben keinen direkten Einfluss auf diese.',
         q7: 'Was kann ich tun, wenn meine Spende nicht ausgezahlt wurde?',
-        a7: 'Wir übernehmen keine Haftung für verlorengegangene IOTA. Wir bemühen uns aber den Service reibunglos zu betreiben und sind bestrebt einen reibungslosen Ablauf zu gewährleisten. Sollten Fehler erkannt werden, so bitten wir um eine entsprechende Meldung des Fehlers.',
+        a7: 'Wir übernehmen keine Haftung für verloren gegangene IOTA. Wir bemühen uns aber den Service reibunglos zu betreiben und sind bestrebt einen reibungslosen Ablauf zu gewährleisten. Sollten Fehler erkannt werden, so bitten wir um eine entsprechende Meldung des Fehlers.',
         no_question: 'Deine Frage ist nicht dabei?',
-        ask_discord: 'Kein problem! Melde dich in unserem',
+        ask_discord: 'Kein Problem! Melde dich in unserem',
         ask_discord2: 'im Community #pool Channel.',
       }
     }
