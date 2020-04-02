@@ -28,6 +28,9 @@
             <el-collapse-item :title="$t('faq.q7')" name="7">
                 <div><i18n path="faq.a7"></i18n></div>
             </el-collapse-item>
+            <el-collapse-item :title="$t('faq.q8')" name="8">
+                <div><i18n path="faq.a8"></i18n></div>
+            </el-collapse-item>
         </el-collapse>
         <br />
         <h3><i18n path="faq.no_question"></i18n></h3>

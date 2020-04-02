@@ -10,7 +10,7 @@ export const i18n = new VueI18n({
     en:{
       home: {
         headline1: 'IOTA Node Pool',
-        headline2: 'IOTA Nodes of the community - for the community!',
+        headline2: 'IOTA Nodes from the community - for the community!',
         table_head: 'Pool Leaderboard',
         table_rank: 'Rank',
         table_points: 'Points',
@@ -28,28 +28,43 @@ export const i18n = new VueI18n({
       privacy: 'Privacy Policy',
       register_title: 'Be part of the Community Pool',
       register_desc: 'To make your node available to the community via Tangle Bay, it is necessary to add it to the load balancer. It is not necessary to install any special software or run any other applications.',
-      register_run: 'Please execute this in your terminal:',
+      register_run: 'Please execute this in your terminal (Package jq required!):',
       node_add: {
         title: 'Add node',
         description: 'To add a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes from the desired node and you are not trying to add a foreign node.',
-        attention: 'Please note that after successfully adding a new node, you must carefully save the password which you receive. With the password you can remove your node at any time, if you are no longer interested.',
+        pow: 'If your node support POW.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren',
+        attention: 'Please note that after successfully adding a new node, you must carefully save the password which you receive. With the password you can remove your node at any time, if you are no longer interested.'
       },
       node_delete: {
         title: 'Remove node',
         description: 'To remove a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes with the correct password.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren'
       },
       node_update: {
         title: 'Update node',
         description: 'To update a node, please fill out the form and run it on your node. If you do not use the same PASSWORD when adding a new node, the node will lose its points in the pool.',
+        pow: 'If your node support POW.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren'
       },
       footer: require('./translations/footer').en(),
       donate: {
         title: 'Donations (BETA)',
         subtitle: 'Made by the community to support the communty',
         description: 'To Donate some MIOTAs, please press the button below!',
-        button_text: 'Donate IOTA',
+        button_text: 'Donate IOTA'
       },
       faq: {
+        h2: 'All questions at once',
         q1: 'What is the pool?',
         a1: 'The pool offers node operators the opportunity to participate in a public access point for Trinity without having to make their own address public. The pool also offers the possibility to receive donations from users.',
         q2: 'How can I donate?',
@@ -64,10 +79,11 @@ export const i18n = new VueI18n({
         a6: 'A tax deduction of the donation is not possible, because einfachIOTA does not receive any donation itself, but only acts as an agent without commission or other remuneration. The donations are always directly addressed to the respective node operators and we have no direct influence on them.',
         q7: 'What can I do if my donation was not paid out?',
         a7: 'We assume no liability for lost IOTA. However, we do our best to operate the service smoothly and are anxious to ensure a smooth process. If errors are detected, please report the error.',
+        q8: 'What happens if a donation address is invalid?',
+        a8: 'If a donation address is invalid, the IOTA intended for the node are sent to Tangle Bay. However, these IOTA will be used 100% for the maintenance of the pool infrastructure.',
         no_question: 'Your question is not there?',
         ask_discord: 'No prob! Join our',
-        ask_discord2: 'in the community #pool channel.',
-        h2: 'All questions at once',
+        ask_discord2: 'in the community #pool channel.'
       }
     },
     de: {
@@ -90,26 +106,40 @@ export const i18n = new VueI18n({
       privacy: 'Datenschutz',
       register_title: 'Sei ein Teil des Community Pools',
       register_desc: 'Um deine Node der Community über den Pool zur Verfügung zu stellen, ist es notwendig, ihn den Load Balancern hinzuzufügen. Es ist nicht notwendig, eine spezielle Software zu installieren oder andere Anwendungen auszuführen.',
-      register_run: 'Bitte führe den Befehl in deiner Konsole aus: ',
+      register_run: 'Bitte führe den Befehl in deiner Konsole aus (Paket jq benötigt!): ',
       node_add: {
         title: 'Node hinzufügen',
         description: 'Um eine Node hinzuzufügen, fülle bitte das Formular aus und führe ihn auf deiner Node aus. Eine CURL-Request wird an die Load Balancer von Tangle Bay gesendet und es wird überprüft, ob die Anforderung tatsächlich von der gewünschten Node stammt und du nicht versuchst, eine fremde Node hinzuzufügen.',
+        pow: 'Falls deine Node POW unterstützt.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren',
         attention: 'Bitte beachte, dass nach dem erfolgreichen Hinzufügen einer neuen Node das erhaltene Passwort sorgfältig gespeichert werden muss. Mit dem Passwort kannst du jederzeit deine Node wieder entfernen.' 
       },
       node_delete: {
         title: 'Node entfernen',
-        description: 'Um eine Node zu entfernen, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Ein CURL-Request wird an die Load Balancer von Tangle Bay gesendet und es wird überprüft, ob die Anforderung tatsächlich mit dem richtigen Passwort kommt.'
+        description: 'Um eine Node zu entfernen, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Ein CURL-Request wird an die Load Balancer von Tangle Bay gesendet und es wird überprüft, ob die Anforderung tatsächlich mit dem richtigen Passwort kommt.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren'
       },
       node_update: {
         title: 'Node updaten',
-        description: 'Um eine Node zu updaten, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Sollte beim wieder hinzufügen nicht das gleiche PASSWORD verwendet werden, verliert die Node ihre Punkte im Pool.'
+        description: 'Um eine Node zu updaten, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Sollte beim wieder hinzufügen nicht das gleiche PASSWORD verwendet werden, verliert die Node ihre Punkte im Pool.',
+        pow: 'Falls deine Node POW unterstützt.',
+        submit: 'Senden',
+        edit: 'Ändern',
+        reset: 'Zurücksetzen',
+        copy: 'Kopieren'
       },
       footer: require('./translations/footer').de(),
       donate: {
         title: 'Spenden (BETA)',
         subtitle: 'Einer für alle, alle für einen!',
         description: 'Wenn du ein paar MIOTA an die Nodebetreiber spenden willst, drücke bitte den Button!',
-        button_text: 'Spende IOTA',
+        button_text: 'Spende IOTA'
       },
       faq: {
         headline2: 'Alle Fragen auf einen Blick',
@@ -127,9 +157,11 @@ export const i18n = new VueI18n({
         a6: 'Eine steuerliche Absetzung der Spende ist nicht möglich, da einfachIOTA keine Spende selbst erhält, sondern nur Vermittler ohne Provision oder andere Vergütung agiert. Die Spenden richten sich immer direkt an die jeweiligen Nodebetreiber und wir haben keinen direkten Einfluss auf diese.',
         q7: 'Was kann ich tun, wenn meine Spende nicht ausgezahlt wurde?',
         a7: 'Wir übernehmen keine Haftung für verloren gegangene IOTA. Wir bemühen uns aber den Service reibunglos zu betreiben und sind bestrebt einen reibungslosen Ablauf zu gewährleisten. Sollten Fehler erkannt werden, so bitten wir um eine entsprechende Meldung des Fehlers.',
+        q8: 'Was passiert wenn eine Donationadresse ungültig ist?',
+        a8: 'Sollte eine Donationadresse ungültig sein, so werden die für die Node bestimmten IOTA an Tangle Bay gesendet. Diese IOTA werden allerdings zu 100% für die Erhaltung der Infrastruktur des Pools verwendet.',
         no_question: 'Deine Frage ist nicht dabei?',
         ask_discord: 'Kein Problem! Melde dich in unserem',
-        ask_discord2: 'im Community #pool Channel.',
+        ask_discord2: 'im Community #pool Channel.'
       }
     }
   }

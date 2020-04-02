@@ -22,7 +22,7 @@
         ></el-input>
       </el-form-item>
       <el-form-item label="URL" prop="url">
-        <el-input type="text" v-model="ruleForm.url" autocomplete="off" placeholder="Your node URL"></el-input>
+        <el-input type="text" v-model="ruleForm.url" autocomplete="off" placeholder="https://my.url.com:443"></el-input>
       </el-form-item>
       <el-form-item label="Adddress" prop="address">
         <el-input
@@ -33,11 +33,11 @@
         ></el-input>
       </el-form-item>
       <el-form-item label="POW" prop="pow">
-        <el-checkbox v-model="ruleForm.pow">If your node support POW.</el-checkbox>
+        <el-checkbox v-model="ruleForm.pow"><i18n path="node_add.pow"></i18n></el-checkbox>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
-        <el-button @click="resetForm('ruleForm')">Reset</el-button>
+        <el-button type="primary" @click="submitForm('ruleForm')"><i18n path="node_add.submit"></i18n></el-button>
+        <el-button @click="resetForm('ruleForm')"><i18n path="node_add.reset"></i18n></el-button>
       </el-form-item>
     </el-form>
     <div v-else>
@@ -47,8 +47,8 @@
         <pre class="code">
             {{ command }}
         </pre>
-        <el-button type="primary" v-clipboard:copy="command">Copy</el-button>
-        <el-button @click="edit()">Edit</el-button>
+        <el-button type="primary" v-clipboard:copy="command"><i18n path="node_add.copy"></i18n></el-button>
+        <el-button @click="edit()"><i18n path="node_add.edit"></i18n></el-button>
         <p>
         <i18n path="node_add.attention"></i18n>
         </p>
