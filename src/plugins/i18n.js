@@ -33,28 +33,28 @@ export const i18n = new VueI18n({
         title: 'Add node',
         description: 'To add a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes from the desired node and you are not trying to add a foreign node.',
         pow: 'If your node support POW.',
-        submit: 'Senden',
-        edit: 'Ändern',
-        reset: 'Zurücksetzen',
-        copy: 'Kopieren',
+        submit: 'Submit',
+        edit: 'Edit',
+        reset: 'Reset',
+        copy: 'Copy',
         attention: 'Please note that after successfully adding a new node, you must carefully save the password which you receive. With the password you can remove your node at any time, if you are no longer interested.'
       },
       node_delete: {
         title: 'Remove node',
         description: 'To remove a node, please fill out the form and run it on your node. A CURL request is sent to the load balancers of Tangle Bay and it is verified that the request actually comes with the correct password.',
-        submit: 'Senden',
-        edit: 'Ändern',
-        reset: 'Zurücksetzen',
-        copy: 'Kopieren'
+        submit: 'Submit',
+        edit: 'Edit',
+        reset: 'Reset',
+        copy: 'Copy'
       },
       node_update: {
         title: 'Update node',
         description: 'To update a node, please fill out the form and run it on your node. If you do not use the same PASSWORD when adding a new node, the node will lose its points in the pool.',
         pow: 'If your node support POW.',
-        submit: 'Senden',
-        edit: 'Ändern',
-        reset: 'Zurücksetzen',
-        copy: 'Kopieren'
+        submit: 'Submit',
+        edit: 'Edit',
+        reset: 'Reset',
+        copy: 'Copy'
       },
       footer: require('./translations/footer').en(),
       donate: {

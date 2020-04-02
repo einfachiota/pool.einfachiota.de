@@ -18,12 +18,12 @@
           type="text"
           v-model="ruleForm.password"
           autocomplete="off"
-          placeholder="Your node password"
+          placeholder="MXASHSEGANHOZSIODDGOYVLHL9MLUXQXNWRAFDHLNMJVOROXJZPBQQJLWSAQNVPRW9ORGGENCWDTBUGWD"
         ></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="submitForm('ruleForm')"><i18n path="node_remove.submit"></i18n></el-button>
-        <el-button @click="resetForm('ruleForm')"><i18n path="node_remove.reset"></i18n></el-button>
+        <el-button type="primary" @click="submitForm('ruleForm')"><i18n path="node_delete.submit"></i18n></el-button>
+        <el-button @click="resetForm('ruleForm')"><i18n path="node_delete.reset"></i18n></el-button>
       </el-form-item>
     </el-form>
     <div v-else>
@@ -33,8 +33,8 @@
         <pre class="code">
             {{ command }}
         </pre>
-        <el-button type="primary" v-clipboard:copy="command"><i18n path="node_remove.copy"></i18n></el-button>
-        <el-button @click="edit()"><i18n path="node_remove.edit"></i18n></el-button>
+        <el-button type="primary" v-clipboard:copy="command"><i18n path="node_delete.copy"></i18n></el-button>
+        <el-button @click="edit()"><i18n path="node_delete.edit"></i18n></el-button>
     </div>
   </div>
 </template>

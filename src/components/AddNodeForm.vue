@@ -18,7 +18,7 @@
           type="text"
           v-model="ruleForm.name"
           autocomplete="off"
-          placeholder="Your node name"
+          placeholder="IOTA Hornet Node"
         ></el-input>
       </el-form-item>
       <el-form-item label="URL" prop="url">
@@ -29,7 +29,7 @@
           type="text"
           v-model="ruleForm.address"
           autocomplete="off"
-          placeholder="Your IOTA donation address"
+          placeholder="CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW"
         ></el-input>
       </el-form-item>
       <el-form-item label="POW" prop="pow">

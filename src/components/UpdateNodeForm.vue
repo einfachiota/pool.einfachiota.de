@@ -18,7 +18,7 @@
           type="text"
           v-model="ruleForm.name"
           autocomplete="off"
-          placeholder="Your node name"
+          placeholder="IOTA Hornet Node"
         ></el-input>
       </el-form-item>
       <el-form-item label="URL" prop="url">
@@ -29,7 +29,7 @@
           type="text"
           v-model="ruleForm.address"
           autocomplete="off"
-          placeholder="Your IOTA donation address"
+          placeholder="CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW"
         ></el-input>
       </el-form-item>
       <el-form-item label="Password" prop="password">
@@ -37,11 +37,11 @@
           type="text"
           v-model="ruleForm.password"
           autocomplete="off"
-          placeholder="Your node password"
+          placeholder="MXASHSEGANHOZSIODDGOYVLHL9MLUXQXNWRAFDHLNMJVOROXJZPBQQJLWSAQNVPRW9ORGGENCWDTBUGWD"
         ></el-input>
       </el-form-item>
       <el-form-item label="POW" prop="pow">
-        <el-checkbox v-model="ruleForm.pow"><i18n path="node_add.attention"></i18n></el-checkbox>
+        <el-checkbox v-model="ruleForm.pow"><i18n path="node_update.attention"></i18n></el-checkbox>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm('ruleForm')"><i18n path="node_update.submit"></i18n></el-button>
