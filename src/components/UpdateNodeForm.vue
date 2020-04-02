@@ -41,7 +41,7 @@
         ></el-input>
       </el-form-item>
       <el-form-item label="POW" prop="pow">
-        <el-checkbox v-model="ruleForm.pow"><i18n path="node_update.attention"></i18n></el-checkbox>
+        <el-checkbox v-model="ruleForm.pow"><i18n path="node_update.pow"></i18n></el-checkbox>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm('ruleForm')"><i18n path="node_update.submit"></i18n></el-button>
@@ -66,7 +66,7 @@ export default {
   data() {
     var checkValue = (rule, value, callback) => {
       if (!value) {
-        return callback(new Error("Please input something"));
+        return callback(new Error(<i18n path="register_empty"></i18n>));
       } else {
           callback();
       }

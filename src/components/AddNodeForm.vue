@@ -61,7 +61,7 @@ export default {
   data() {
     var checkValue = (rule, value, callback) => {
       if (!value) {
-        return callback(new Error("Please input something"));
+        return callback(new Error(<i18n path="register_empty"></i18n>));
       } else {
           callback();
       }
