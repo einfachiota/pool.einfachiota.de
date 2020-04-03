@@ -57,6 +57,20 @@ export const i18n = new VueI18n({
         reset: 'Reset',
         copy: 'Copy'
       },
+      node_details: {
+        valid: 'Valid',
+        invalid: 'Invalid',
+        address: 'Donationaddress',
+        copy: 'Adresse kopieren',
+        command: 'Command',
+        count: 'Count',
+        points: 'Points',
+        donations: 'Donations',
+        total: 'Total received',
+        date: 'Date',
+        amount: 'Amount',
+        link: 'Link'
+      },
       footer: require('./translations/footer').en(),
       donate: {
         title: 'Donations (BETA)',
@@ -135,6 +149,20 @@ export const i18n = new VueI18n({
         edit: 'Ändern',
         reset: 'Zurücksetzen',
         copy: 'Kopieren'
+      },
+      node_details: {
+        valid: 'Gültig',
+        invalid: 'Ungültig',
+        address: 'Donationaddress',
+        copy: 'Adresse kopieren',
+        command: 'Befehl',
+        count: 'Anzahl',
+        points: 'Punkte',
+        donations: 'Spenden',
+        total: 'Insgesamt erhalten',
+        date: 'Datum',
+        amount: 'Anzahl',
+        link: 'Link'
       },
       footer: require('./translations/footer').de(),
       donate: {

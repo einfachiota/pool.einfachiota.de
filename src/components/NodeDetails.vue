@@ -23,35 +23,35 @@
           </p>
           <div v-if="valid == 'true'">
             <p>
-              <strong>Donationaddress:</strong>
+              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
               {{details.address}} 
-              <label class="valid">valid</label>
+              <label class="valid"><i18n path="node_details.valid"></i18n></label>
             </p>
           </div>
           <div v-else-if="valid == 'used'">
             <p>
-              <strong>Donationaddress:</strong>
+              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
               {{details.address}}
-              <label class="invalid">used</label>
+              <label class="invalid"><i18n path="node_details.valid"></i18n></label>
             </p>
           </div>
           <div v-else>
             <p>
-              <strong>Donationaddress:</strong>
+              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
               {{details.address}}
-              <label class="invalid">invalid</label>
+              <label class="invalid"><i18n path="node_details.invalid"></i18n></label>
             </p>
           </div>
-          <el-button v-clipboard:copy="details.address" v-clipboard:success="onCopy">Copy address<span v-if="copy">   &#10004;</span></el-button>
+          <el-button v-clipboard:copy="details.address" v-clipboard:success="onCopy"><i18n path="node_details.copy"><span v-if="copy">   &#10004;</span></el-button>
           <br />
           <br />
         </div>
       </div>
       <table class="el-table">
         <thead class="el-table__head">
-          <td>Command</td>
-          <td>Count</td>
-          <td>Points</td>
+          <td><i18n path="node_details.command"></i18n></td>
+          <td><i18n path="node_details.count"></i18n></td>
+          <td><i18n path="node_details.points"></i18n></td>
         </thead>
         <tbody>
           <tr class="el-table__row" v-for="(command, index) in sortedCommands" :key="index">
@@ -62,17 +62,17 @@
         </tbody>
       </table>
       </el-card>
-    <h2 class="headline">Donations</h2>
+    <h2 class="headline"><i18n path="node_details.donations"></i18n></h2>
     <el-card class="node-box">
       <div slot="header" class="clearfix">
       <div v-if="payoutsLoaded">
-        <strong>Total received:</strong> {{totalValue}}i
+        <strong>T<i18n path="node_details.total">:</strong> {{totalValue}}i
         </div>
       <table class="el-table">
         <thead class="el-table__head">
-          <td>Date</td>
-          <td>Amount</td>
-          <td>Link</td>
+          <td><i18n path="node_details.date"></td>
+          <td><i18n path="node_details.amount"></td>
+          <td><i18n path="node_details.link"></td>
         </thead>
         <tbody>
           <tr v-for="(payout,id) in this.payouts" v-bind:key="id">
