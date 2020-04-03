@@ -13,8 +13,8 @@
         <br />
         <br />
         <br />
-        <h2>Leaderboard</h2>
-        <DonationLeaderboard />
+        <h2><i18n path="donate.donationlist"></i18n></h2>
+        <DonationList />
         <br />
       </div>
     </div>
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import DonationLeaderboard from "../components/DonationLeaderboard";
+import DonationList from "../components/DonationList";
 
 export default {
-  components: { DonationLeaderboard },
+  components: { DonationList },
   data() {
     return {
       navOpen: false

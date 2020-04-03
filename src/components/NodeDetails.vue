@@ -66,7 +66,7 @@
     <el-card class="node-box">
       <div slot="header" class="clearfix">
       <div v-if="payoutsLoaded">
-        <strong><i18n path="node_details.total"></i18n>:</strong> {{totalValue/1000000}} Mi
+        <strong><i18n path="node_details.total"></i18n>:</strong> {{unit(totalValue)}}
         </div>
       <table class="el-table">
         <thead class="el-table__head">
@@ -77,7 +77,7 @@
         <tbody>
           <tr v-for="(payout,id) in this.payouts" v-bind:key="id">
             <td>{{timeConverter(parseInt(payout.id))}}</td>
-            <td>{{payout.value/1000000}} Mi</td>
+            <td>{{unit(payout.value)}}</td>
             <td><a v-bind:href="'https://thetangle.org/transaction/'+payout.txhash" target="_blank"> <button class="el-button">tx </button></a></td>
           </tr>
         </tbody>
@@ -188,6 +188,24 @@ export default {
       let min = ('0' + a.getMinutes()).slice(-2);
       let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min ;
       return time;
+    },
+    unit(param) {
+      let value = param
+      function round(v, r) { value = (Math.round(units.convertUnits(v, 'i', r) * 100) / 100) + " " + r }
+      if (value < 1000) {
+        value += ' i'
+      } else if (value > 999 && value < 100000) {
+        round(value, "Ki")
+      } else if (value > 99999 && value < 1000000000) {
+        round(value, "Mi")
+      } else if (value > 999999999 && value < 1000000000000) {
+        round(value, "Gi")
+      } else if (value > 999999999999 && value < 1000000000000000) {
+        round(value, "Ti")
+      } else if (value > 999999999999999) {
+        round(value, "Pi")
+      }
+      return value
     }
   },
   async mounted() {

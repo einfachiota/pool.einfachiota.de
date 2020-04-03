@@ -1,4 +1,6 @@
 <template>
+<div>
+  <strong><i18n path="node_details.total"></i18n>:</strong> {{unit(totalValue)}}
   <el-table
     v-loading="loading"
     :data="sortedPayments"
@@ -16,6 +18,7 @@
       <template slot-scope="scope"><a :href="'https://thetangle.org/transaction/' + scope.row.txInfo.hash" target="_blank"><button class="el-button">tx </button></a></template>
     </el-table-column>
   </el-table>
+</div>
 </template>
 
 <script>
@@ -26,7 +29,8 @@ export default {
       loading: false,
       url: "https://pool-donations.einfachiota.de/payments",
       payments: [],
-      intervalid1: null
+      intervalid1: null,
+      totalValue: 0,
     };
   },
   methods: {
@@ -37,11 +41,13 @@ export default {
           return response.json();
         })
         .then(function(payments) {
+
           console.log("payments", payments)
           if (payments) {
             self.payments = payments;
             self.loading = false;
           }
+          self.totalValue = payments.reduce( ( sum, { value } ) => sum + value , 0)
         });
     },
     tableRowClassName({ row }) {
@@ -77,6 +83,24 @@ export default {
       }.bind(this),
       10000
     );
+  },
+  unit(param) {
+      let value = param
+      function round(v, r) { value = (Math.round(units.convertUnits(v, 'i', r) * 100) / 100) + " " + r }
+      if (value < 1000) {
+        value += ' i'
+      } else if (value > 999 && value < 100000) {
+        round(value, "Ki")
+      } else if (value > 99999 && value < 1000000000) {
+        round(value, "Mi")
+      } else if (value > 999999999 && value < 1000000000000) {
+        round(value, "Gi")
+      } else if (value > 999999999999 && value < 1000000000000000) {
+        round(value, "Ti")
+      } else if (value > 999999999999999) {
+        round(value, "Pi")
+      }
+      return value
   },
   beforeDestroy () {
     clearInterval(this.intervalid1)
