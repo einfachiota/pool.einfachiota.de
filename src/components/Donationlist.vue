@@ -10,7 +10,9 @@
     <el-table-column label="Date" align="left">
       <template slot-scope="scope">{{ scope.row.txInfo.timestamp | moment('DD.MM.YYYY HH:mm') }}</template>
     </el-table-column>
-    <el-table-column prop="txInfo.value" label="IOTA" align="left"></el-table-column>
+    <el-table-column label="IOTA" align="left">
+      <template slot-scope="scope">{{unit(scope.row.txInfo.value)}}</template>
+    </el-table-column>
     <el-table-column label="Message" align="left">
       <template slot-scope="scope">{{scope.row.txInfo.message}}</template>
     </el-table-column>
@@ -22,7 +24,8 @@
 </template>
 
 <script>
-import units from '@iota/unit-converter'
+// import * as units from '@iota/unit-converter'
+let units = require('@iota/unit-converter');
 export default {
   name: "NodeList",
   data() {
@@ -48,7 +51,13 @@ export default {
             self.payments = payments;
             self.loading = false;
           }
-          self.totalValue = payments.reduce( ( sum, { value } ) => sum + value , 0)
+          let total = 0
+          payments.forEach(p=>{
+            if(typeof p.txInfo != 'undefined'){
+              total = total + p.txInfo.value
+            }
+          })
+          self.totalValue = total
         });
     },
     tableRowClassName({ row }) {
@@ -57,7 +66,25 @@ export default {
       } else {
         return "danger-row";
       }
-    }
+    },
+    unit(param) {
+      let value = param
+      function round(v, r) { value = (Math.round(units.convertUnits(v, 'i', r) * 100) / 100) + " " + r }
+      if (value < 1000) {
+        value += ' i'
+      } else if (value > 999 && value < 100000) {
+        round(value, "Ki")
+      } else if (value > 99999 && value < 1000000000) {
+        round(value, "Mi")
+      } else if (value > 999999999 && value < 1000000000000) {
+        round(value, "Gi")
+      } else if (value > 999999999999 && value < 1000000000000000) {
+        round(value, "Ti")
+      } else if (value > 999999999999999) {
+        round(value, "Pi")
+      }
+      return value
+    },
   },
   computed: {
     sortedPayments() {
@@ -84,24 +111,6 @@ export default {
       }.bind(this),
       10000
     );
-  },
-  unit(param) {
-      let value = param
-      function round(v, r) { value = (Math.round(units.convertUnits(v, 'i', r) * 100) / 100) + " " + r }
-      if (value < 1000) {
-        value += ' i'
-      } else if (value > 999 && value < 100000) {
-        round(value, "Ki")
-      } else if (value > 99999 && value < 1000000000) {
-        round(value, "Mi")
-      } else if (value > 999999999 && value < 1000000000000) {
-        round(value, "Gi")
-      } else if (value > 999999999999 && value < 1000000000000000) {
-        round(value, "Ti")
-      } else if (value > 999999999999999) {
-        round(value, "Pi")
-      }
-      return value
   },
   beforeDestroy () {
     clearInterval(this.intervalid1)

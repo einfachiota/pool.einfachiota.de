@@ -89,7 +89,7 @@
 
 <script>
 import axios from 'axios';
-import units from '@iota/unit-converter'
+import * as units from '@iota/unit-converter'
 export default {
   name: "NodeDetails",
   props: ["nodeKey"],
