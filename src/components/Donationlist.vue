@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import units from '@iota/unit-converter'
 export default {
   name: "NodeList",
   data() {

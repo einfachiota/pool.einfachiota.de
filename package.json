@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@iota/unit-converter": "^1.0.0-beta.23",
     "core-js": "^3.4.4",
     "element-ui": "^2.13.0",
     "node-sass": "^4.13.1",
@@ -25,7 +26,7 @@
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "minimist": "^1.2.5",
