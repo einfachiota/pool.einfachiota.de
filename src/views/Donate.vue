@@ -10,8 +10,12 @@
         <iota-payment class="iota-pay"><i18n path="donate.button_text"></i18n></iota-payment>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
         <h2>Leaderboard</h2>
         <DonationLeaderboard />
+        <br />
       </div>
     </div>
   </div>

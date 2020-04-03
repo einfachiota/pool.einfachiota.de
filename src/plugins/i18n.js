@@ -61,7 +61,7 @@ export const i18n = new VueI18n({
         valid: 'Valid',
         invalid: 'Invalid',
         address: 'Donationaddress',
-        copy: 'Adresse kopieren',
+        copy: 'Copy address',
         command: 'Command',
         count: 'Count',
         points: 'Points',
@@ -153,7 +153,7 @@ export const i18n = new VueI18n({
       node_details: {
         valid: 'Gültig',
         invalid: 'Ungültig',
-        address: 'Donationaddress',
+        address: 'Spendenadresse',
         copy: 'Adresse kopieren',
         command: 'Befehl',
         count: 'Anzahl',

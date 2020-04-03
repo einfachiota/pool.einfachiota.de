@@ -13,7 +13,7 @@
       <template slot-scope="scope">{{scope.row.txInfo.message}}</template>
     </el-table-column>
     <el-table-column label="Link" align="right">
-      <template slot-scope="scope"><a :href="'https://thetangle.org/transaction/' + scope.row.txInfo.hash" target="_blank">Show</a></template>
+      <template slot-scope="scope"><a :href="'https://thetangle.org/transaction/' + scope.row.txInfo.hash" target="_blank"><button class="el-button">tx </button></a></template>
     </el-table-column>
   </el-table>
 </template>

@@ -23,7 +23,7 @@
           </p>
           <div v-if="valid == 'true'">
             <p>
-              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
+              <strong><i18n path="node_details.address"></i18n>:</strong>
               {{details.address}} 
               <label class="valid"><i18n path="node_details.valid"></i18n></label>
             </p>
@@ -42,7 +42,7 @@
               <label class="invalid"><i18n path="node_details.invalid"></i18n></label>
             </p>
           </div>
-          <el-button v-clipboard:copy="details.address" v-clipboard:success="onCopy"><i18n path="node_details.copy"><span v-if="copy">   &#10004;</span></el-button>
+          <el-button v-clipboard:copy="details.address" v-clipboard:success="onCopy"><i18n path="node_details.copy"></i18n><span v-if="copy">   &#10004;</span></el-button>
           <br />
           <br />
         </div>
@@ -66,18 +66,18 @@
     <el-card class="node-box">
       <div slot="header" class="clearfix">
       <div v-if="payoutsLoaded">
-        <strong>T<i18n path="node_details.total">:</strong> {{totalValue}}i
+        <strong><i18n path="node_details.total"></i18n>:</strong> {{totalValue/1000000}} Mi
         </div>
       <table class="el-table">
         <thead class="el-table__head">
-          <td><i18n path="node_details.date"></td>
-          <td><i18n path="node_details.amount"></td>
-          <td><i18n path="node_details.link"></td>
+          <td><i18n path="node_details.date"></i18n></td>
+          <td><i18n path="node_details.amount"></i18n></td>
+          <td><i18n path="node_details.link"></i18n></td>
         </thead>
         <tbody>
           <tr v-for="(payout,id) in this.payouts" v-bind:key="id">
             <td>{{timeConverter(parseInt(payout.id))}}</td>
-            <td>{{payout.value}}</td>
+            <td>{{payout.value/1000000}} Mi</td>
             <td><a v-bind:href="'https://thetangle.org/transaction/'+payout.txhash" target="_blank"> <button class="el-button">tx </button></a></td>
           </tr>
         </tbody>
