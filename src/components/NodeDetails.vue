@@ -37,7 +37,7 @@
           </div>
           <div v-else>
             <p>
-              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
+              <strong><i18n path="node_details.address"></i18n>:</strong>
               {{details.address}}
               <label class="invalid"><i18n path="node_details.invalid"></i18n></label>
             </p>
