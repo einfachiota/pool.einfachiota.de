@@ -30,9 +30,9 @@
           </div>
           <div v-else-if="valid == 'used'">
             <p>
-              <strong><i18n path="node_details.donationaddress"></i18n>:</strong>
+              <strong><i18n path="node_details.address"></i18n>:</strong>
               {{details.address}}
-              <label class="invalid"><i18n path="node_details.valid"></i18n></label>
+              <label class="invalid"><i18n path="node_details.invalid"></i18n></label>
             </p>
           </div>
           <div v-else>
