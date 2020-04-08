@@ -65,7 +65,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.command = `curl -X DELETE https://register.tanglebay.org/nodes/${ this.ruleForm.password }`
+          this.command = `curl -X DELETE https://register.tanglebay.org/${ this.ruleForm.password }`
           this.showCode = true;
         } else {
           console.log("error submit!!");

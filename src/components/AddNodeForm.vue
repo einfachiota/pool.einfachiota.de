@@ -87,7 +87,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.command = `curl https://register.tanglebay.org/nodes -X POST -H 'Content-type: application/json' -d '{"name": "${ this.ruleForm.name }", "url": "${ this.ruleForm.url }", "address": "${ this.ruleForm.address }", "pow": ${ this.ruleForm.pow }}' |jq`
+          this.command = `curl https://register.tanglebay.org -X POST -H 'Content-type: application/json' -d '{"name": "${ this.ruleForm.name }", "url": "${ this.ruleForm.url }", "address": "${ this.ruleForm.address }", "pow": ${ this.ruleForm.pow }}' |jq`
           this.showCode = true;
         } else {
           console.log("error submit!!");
