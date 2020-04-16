@@ -51,6 +51,7 @@ export const i18n = new VueI18n({
       node_update: {
         title: 'Update node',
         description: 'To update a node, please fill out the form and run it on your node. If you do not use the same PASSWORD when adding a new node, the node will lose its points in the pool.',
+        description2: 'A node should only be updated in an emergency, as it can lead to a total loss of the current points!',
         pow: 'If your node support POW.',
         submit: 'Submit',
         edit: 'Edit',
@@ -145,6 +146,7 @@ export const i18n = new VueI18n({
       node_update: {
         title: 'Node updaten',
         description: 'Um eine Node zu updaten, fülle bitte das Formular aus und führe anschließend den Befehl auf deiner Node aus. Sollte beim wieder hinzufügen nicht das gleiche PASSWORD verwendet werden, verliert die Node ihre Punkte im Pool.',
+        description2: 'Eine Node sollte nur bei einem Notfall aktualisiert werden, da es zum Totalverlust der aktuellen Punkte führen kann!',
         pow: 'Falls deine Node POW unterstützt.',
         submit: 'Senden',
         edit: 'Ändern',

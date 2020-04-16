@@ -2,6 +2,8 @@
   <div>
     <p>
       <i18n path="node_update.description"></i18n>
+      <br />
+      <b><i18n path="node_update.description2"></i18n></b>
     </p>
     <br />
     <el-form
