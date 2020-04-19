@@ -78,7 +78,9 @@ export const i18n = new VueI18n({
         subtitle: 'Made by the community to support the communty',
         description: 'To Donate some MIOTAs, please press the button below! An address can only be used once for a donation!',
         button_text: 'Donate IOTA',
-        donationlist: 'Donations overview'
+        donationlist: 'Donations overview',
+        info_header: 'Important Information',
+        info: 'The beta phase was successfully completed. A total of 2.07Gi were distributed to 67 node owners depending on their performance. The live event is now being prepared - do you want to help us? Just get in touch with us!'
       },
       faq: {
         h2: 'All questions at once',
@@ -169,11 +171,13 @@ export const i18n = new VueI18n({
       },
       footer: require('./translations/footer').de(),
       donate: {
-        title: 'Spenden (BETA)',
+        title: 'Spenden',
         subtitle: 'Einer für alle, alle für einen!',
         description: 'Wenn du ein paar MIOTA an die Nodebetreiber spenden willst, drücke bitte den Button! Eine Adresse kann nur einmal für eine Spende verwendet werden!',
         button_text: 'Spende IOTA',
-        donationlist: 'Spendenübersicht'
+        donationlist: 'Spendenübersicht',
+        info_header: 'Wichtige information',
+        info: 'Die Betaphase wurde erfolgreich beendet. Insgesamt wurden 2,07Gi an 67 Node Besitzer je nach Leistung verteilt. Der Livegang wird nun vorbereitet - Du willst uns dabei helfen? Melde dich einfach bei uns!'
       },
       faq: {
         headline2: 'Alle Fragen auf einen Blick',

@@ -6,15 +6,20 @@
         <div class="divider"></div>
         <h2><i18n path="donate.subtitle"></i18n></h2>
         <p><i18n path="donate.description"></i18n></p>
+        <el-alert
+          :title="$t('donate.info_header')"
+          type="warning">
+          <i18n path="donate.info"></i18n>
+        </el-alert>
         <br />
-        <iota-payment class="iota-pay"><i18n path="donate.button_text"></i18n></iota-payment>
+        <!-- <iota-payment class="iota-pay"><i18n path="donate.button_text"></i18n></iota-payment> -->
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2><i18n path="donate.donationlist"></i18n></h2>
-        <DonationList />
+        <!-- <h2><i18n path="donate.donationlist"></i18n></h2>
+        <DonationList /> -->
         <br />
       </div>
     </div>
@@ -22,10 +27,10 @@
 </template>
 
 <script>
-import DonationList from "../components/DonationList";
+// import DonationList from "../components/DonationList";
 
 export default {
-  components: { DonationList },
+  components: { },
   data() {
     return {
       navOpen: false
