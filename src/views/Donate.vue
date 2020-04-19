@@ -5,7 +5,7 @@
         <h1 class="heading"><i18n path="donate.title"></i18n></h1>
         <div class="divider"></div>
         <h2><i18n path="donate.subtitle"></i18n></h2>
-        <p><i18n path="donate.description"></i18n></p>
+        <!-- <p><i18n path="donate.description"></i18n></p> -->
         <el-alert
           :title="$t('donate.info_header')"
           type="warning">
