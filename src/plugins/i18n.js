@@ -99,7 +99,7 @@ export const i18n = new VueI18n({
         q7: 'What can I do if my donation was not paid out?',
         a7: 'We assume no liability for lost IOTA. However, we do our best to operate the service smoothly and are anxious to ensure a smooth process. If errors are detected, please report the error.',
         q8: 'What happens if a donation address is invalid?',
-        a8: 'If a donation address is invalid, the IOTA intended for the node are sent to Tangle Bay. However, these IOTA will be used 100% for the maintenance of the pool infrastructure.',
+        a8: 'If a donation address is invalid, the IOTA intended for the node are sent to einfachIOTA as a donation. However, these IOTA will be returned to the ecosystem later.',
         no_question: 'Your question is not there?',
         ask_discord: 'No prob! Join our',
         ask_discord2: 'in the community #pool channel.'
@@ -196,7 +196,7 @@ export const i18n = new VueI18n({
         q7: 'Was kann ich tun, wenn meine Spende nicht ausgezahlt wurde?',
         a7: 'Wir übernehmen keine Haftung für verloren gegangene IOTA. Wir bemühen uns aber den Service reibunglos zu betreiben und sind bestrebt einen reibungslosen Ablauf zu gewährleisten. Sollten Fehler erkannt werden, so bitten wir um eine entsprechende Meldung des Fehlers.',
         q8: 'Was passiert wenn eine Donationadresse ungültig ist?',
-        a8: 'Sollte eine Donationadresse ungültig sein, so werden die für die Node bestimmten IOTA an Tangle Bay gesendet. Diese IOTA werden allerdings zu 100% für die Erhaltung der Infrastruktur des Pools verwendet.',
+        a8: 'Sollte eine Donationadresse ungültig sein, so werden die für die Node bestimmten IOTA an einfachIOTA gespendet. Diese IOTA werden dann nachträglich wieder dem Ökosystem zugeführt.',
         no_question: 'Deine Frage ist nicht dabei?',
         ask_discord: 'Kein Problem! Melde dich in unserem',
         ask_discord2: 'im Community #pool Channel.'
