@@ -12,7 +12,7 @@
     </el-table-column>
     <el-table-column width="100px" prop="points" :label="$t('home.table_points')" align="left"></el-table-column>
     <el-table-column prop="name" :label="$t('home.table_name')" align="left"></el-table-column>
-    <el-table-column width="140px" :label="$t('home.table_version')" align="right">
+    <el-table-column width="145px" :label="$t('home.table_version')" align="right">
       <template slot-scope="scope">{{ scope.row.appVersion ? `${scope.row.appName} ${scope.row.appVersion}` : "-" }}</template>
     </el-table-column>
   </el-table>
